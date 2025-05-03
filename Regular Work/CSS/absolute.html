@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<style>
+				*{
+					box-sizing:border-box;
+				}
+					
+			.myrelative1{
+				width:100px;
+				height:100px;
+				background-color:blue;
+				border: 3px solid #73AD21;
+			}
+			
+			.myrelative2{
+				width:100px;
+				height:100px;
+				background-color:yellow;
+				position: relative;
+				bottom: 50px;
+				left: 20px;
+				border: 3px solid #73AD21;
+			}
+			
+			.myabsolute1{
+				width:100px;
+				height:100px;
+				background-color:blue;
+				border: 3px solid #73AD21;
+				position:absolute;
+				top:50px;
+			}
+			
+			.myabsolute2{
+				width:100%;
+			}
+			
+			
+		</style>
+	</head>
+	
+	<body>
+			
+			 <div  class="myrelative1">
+			 this div element has position: static;
+			 </div>	
+			 
+			 <div  class="myrelative2">
+			 this div element has position: static;
+ 			 </div>
+			 
+			 <hr>
+			 
+			 <div style="position:relative">
+					<div class="myabsolute1">
+						This div element has position: absolute;
+					</div>
+					<div class="myabsolute2">
+						<img src="D:\Downloads\icon.png" width="50%" />
+					</div>
+			 </div>
+			 
+	</body>
+</html>
+
+<!--
+The position property
+The position property specifies the type of positioning method used for an elemenmt.
+
+There are five different position values:
+
+static
+relative
+fixed
+absolute
+sticky
+
+Elements are then positioned using The
+top/bottom/left/right properties.
+
+However, these properties will not work unless the position property is set first. they also work differently depending on the position value.
+
+
+ -->

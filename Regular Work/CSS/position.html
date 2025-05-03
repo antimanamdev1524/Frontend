@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<style>
+			.mystatic11{
+				width:100px;
+				height:100px;
+				background-color:red;
+				position:static;
+				border: 3px solid #73AD21;
+			}
+			
+			.mystatic2{
+				width:100px;
+				height:100px;
+				background-color:green;
+				position:static;
+				border: 3px solid #73AD21;
+			}
+			
+			.myrelative1{
+				width:100px;
+				height:100px;
+				background-color:blue;
+				border:3px solid #73AD21;
+			}
+			
+			.myrelative2{
+				width:100px;
+				height:100px;
+				background-color:yellow;
+				position:relative;
+				bottom: 50px;
+				left: 20px;
+				border: 3px solid #73AD21;
+			}
+			
+			.navbar{
+				width:100%;
+				height:50px;
+				background-color:black;
+				color:white;
+				position:fixed;
+				top:0px;
+			}
+			
+			.whatsapp{
+				width:40px;
+				height:40px;
+				position:fixed;
+				bottom:5px;
+				right:5px;
+			}
+			
+			.myabsolute1{
+				width:100px;
+				height:100px;
+				background-color:blue;
+				border: 3px solid #73AD21;
+				position:absolute;
+				top:50px;
+			}
+			
+			.myabsolute2{
+				width:100%;
+			}
+			
+			
+		</style>
+	</head>
+	
+	<body>
+			 <div  class=".mystatic1"> <p> static_one </p<> </div>
+			 <div  class=".mystatic2"> <p> static 2 </p> </div>
+			  
+			  <div  class=".myrelative1"> this div element has static piosition	 </div>		
+			 <div  class="myrelative2"> this div element has position static  </div>
+			 <hr>
+			 
+			 				
+			 <div  class="navbar"> <a> home </a> 		 </div>
+	         <div  class="whatsapp"> <p> whatsapp </p> </div>
+			 
+			 <div style="position:relative"> 
+				<div class="myabsolute1"> this div element has absolute position </div>
+				<div class="myabsolute2"> <img src="img.jpg" width="100%" /> </div>
+		
+	</body>
+</html>
+
+<!--
+The position property
+The position property specifies the type of positioning method used for an elemenmt.
+
+There are five different position values:
+
+static
+relative
+fixed
+absolute
+sticky
+
+Elements are then positioned using The
+top/bottom/left/right properties.
+
+However, these properties will not work unless the position property is set first. they also work differently depending on the position value.
+
+
+ -->

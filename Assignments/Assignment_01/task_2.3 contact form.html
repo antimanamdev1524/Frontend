@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+</head>
+<body>
+        <form method="POST">
+            <fieldset>
+                <h4> Contact form </h4>
+                <table>
+                        <tr>
+                            <td><label for="fullname"> Full Name:</label></td> 
+                            <td><input type="text" id="name" placeholder="Enter your full name" name="full name" required minlength="3" maxlength="50"/> </td>
+                        </tr> 
+                            
+                        <tr>
+                            <td><label for="email">Email: </label> </td>
+                            <td><input type="email" id="email" placeholder="Enter your email id" name="email" required/> </td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="phone number"> Phone Number: </label> </td>
+                            <td><input type="tel" id="contact" placeholder="Enter 10-Digit mobile number" name="Phone Number" required pattern="[0-9]{10}"/></label></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="subject"> Subject: </label> </td>
+                                    <td><select name="subject" required>
+                                            <option> ----select----</option>
+                                            <option id="maths"> Maths </option>
+                                            <option id="bio"> Bio </option>
+                                            <option id="commerce"> Commerce </option>
+                                            <option id="art"> Art </option>
+                                            <option id="agriculture"> Agriculture </option>
+                                    </select>
+                                    </td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="message"> Message: </label> </td>
+                            <td><textarea id="message" name="message" placeholder="Enter your message here..."></textarea> </td>
+                        </tr>
+                        
+                        <tr>
+                            <td><input type="submit" id="submit" value="submit"></td>
+                        </tr>
+                </table>
+            </fieldset>
+        </form>
+</body>
+</html>

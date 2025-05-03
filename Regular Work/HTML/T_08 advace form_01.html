@@ -1,0 +1,20 @@
+<html>
+	<head> form </head>
+	<body>
+			<form>
+				First Name: <input type="text" name="f_name" required> <br><br>
+				Quantity <input type="number" name="quantity" required min="1" max="5"> <br><br>
+				DOB <input type="date" name="date" required max="2000-04-01">  <br> <br>
+				Appointment Date: <input type="date" name="date" required min="2025-04-19"> <br> <br>
+				Password: <input type="password" name="password" required minilength="8" maxlength="12"> <br> <br>
+				Email: <input type="email" name="email" required> <br> <br>
+				Name: <input type="text" name="name" required pattern="[a-zA-Z]+" title="add alpha"> <br><br>
+				Name: <input type="text" name="name" required pattern="[a-zA-Z] {8-12}" title="add alpha & min 8 char in password"> <br><br>
+				
+				Mobile: <input type="number" name="number" required pattern="[0-9]{10}" title="add mobile"> <br><br>
+				
+				<input type="submit" name="submit" value="register">
+				
+			</form>
+	</body>
+</html>  

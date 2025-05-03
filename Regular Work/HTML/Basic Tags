@@ -1,0 +1,24 @@
+<html>  
+<head>
+<title>
+<h1>  <h6>
+
+<body>
+<p>   paragraph
+<b>   bold
+<i>   italic
+<u>   underline
+<em>  emphasize the text
+<hr> : horizontal line (no need to close it)
+<br> : break the line (no need to close it)
+<pre> : content will be remain same, as we write
+<fieldset> 
+<legend>
+<del>
+<marked>
+<ins>
+<sub>   subcripted (use for number)
+<sup>   supercripted (use for power in math)
+
+
+<p align="right"> <p align="left">  <p align="center"> 
