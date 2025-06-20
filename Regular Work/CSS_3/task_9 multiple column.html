@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .newspaper{
+        color:green;
+        column-count:4;
+        column-gap:40px;
+        column-rule-style:solid;
+        column-rule-style: 2px;
+        column-rule-width: 2px;
+        column-rule-color:red;
+    }
+
+    h2{
+        column-span:all;
+    }
+    /* shorthand */
+    .newspaper1{
+        color:green;
+        column-count:4;
+        column-gap:40px;
+        column-rule:solid 2px red;
+    }
+</style>
+<body>
+    <div class="newspaper">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem accusantium omnis unde earum, voluptate reprehenderit nulla nostrum, hic minus molestias quisquam. Nisi nihil ab nulla aliquid dolores, praesentium commodi at?
+    </div>
+<hr>
+    <div class="h2">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem accusantium omnis unde earum, voluptate reprehenderit nulla nostrum, hic minus molestias quisquam. Nisi nihil ab nulla aliquid dolores, praesentium commodi at?
+    </div>
+<hr>
+    <div class="newspaper1">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem accusantium omnis unde earum, voluptate reprehenderit nulla nostrum, hic minus molestias quisquam. Nisi nihil ab nulla aliquid dolores, praesentium commodi at?
+    </div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!-- A CSS pseudo-element is used to style specified parts of an element.
+
+for example:
+it can be used to:
+=> style the first letter or line of an element.
+=> Insert content before, or after, the content of an element
+
+selector:pseudo-element{
+    property: value;
+}
+
+selector            Example             description
+::after             P::after            Insert something after the content of each <p> element
+::before            p::before           Insert something before the content of each <p> element
+::first-letter      p::first-letter     Select the first letter of each <p> element
+::first-line        p::first-line       select the portion of an element that is selected by a user
+::selection         p::selection -->
+
+-->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       h1::first-letter{
+         font-size: 200%;
+         color: #8A2BE2
+       }    
+        
+       p::first-line{
+            font-size: 200%;
+            color: #8A2BE2
+         }
+
+      p::selection{
+         color:red;
+         background: yellow;
+      }
+
+      h3::after{
+         content: " -Remember this"
+         background-color: yelliow;
+         color: red;
+         font-weight: bold;
+      }
+
+      h4::before{
+         content: url('a.jpg');
+      }
+
+
+
+
+    </style>
+ </head>
+ <body>
+        <p> Hello, hru? </p>
+        <p> Hello, hru? </p>
+        <p> Hello, hru? </p>
+        <p> Hello, hru? </p>
+        <p> Hello, hru? </p>
+ </body>
+
+ <ol>
+         <li> apple </li>
+         <li> orange </li>
+    </ol>
+
+    <h2> CSS Link</h2>
+
+
+ </html>

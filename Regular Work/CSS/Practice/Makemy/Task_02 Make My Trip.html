@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- w3 school icon -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/3f2f4bfeb4.js" crossorigin="anonymous"></script>
+    
+    <!-- ionic -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box
+        }
+        .row{
+            display:flex;
+        }
+        
+            .col-1 {width: 8.33%;}
+			.col-2 {width: 16.66%}
+			.col-3 {width: 25%}
+			.col-4 {width: 33.33%}
+			.col-5 {width: 41.66%;}
+			.col-6 {width: 50%;}
+			.col-7 {width: 58.33%;}
+			.col-8 {width: 66.66%;}
+			.col-9 {width: 75%;}
+			.col-10 {width: 83.33%;}
+			.col-11 {width: 91.66%;}
+			.col-12 {width: 100%;}
+
+        .banner{
+             background-image:url(sunset-river-with-sunset-background_1262781-11886.jpg);
+             background-size:cover;
+             height: 500px;
+             padding-top:1px;
+             padding-left:1px;
+             padding-right:1px;
+             color: white;
+        }
+
+        .service{
+            background-color: white;
+            border: 1px solid lightgrey;
+            border-radius: 10px;
+            padding: 10px;
+            position: relative;
+            bottom:440px; 
+        }
+
+        .service_box{
+            width:10%;
+            height: auto;
+            float: left;
+            text-align: center;
+            font-size: small;
+        }
+
+        .service_icon{
+            color: black;
+            
+        }
+
+        .relative{
+            width: auto;
+        }
+
+        .msg{
+            background-color: white;
+            padding: 10px;
+            border-radius: 4px;
+            margin-left: 5px;
+            margin-right:5px;
+            position: relative;
+            bottom: 460px; 
+            height: 240px;
+            width: calc(100% - 10px); /* leaves room for left+right margin */
+        }
+
+        .booking{
+            background-color: white;
+            background-size: cover;
+            border: 1px solid lightgrey;
+            border-radius: 5px;
+            padding: 10px;
+            position: relative;
+            bottom: 660px; 
+            text-align: left;
+        }
+
+        .search{
+            background-color:hsl(214, 96%, 43%);
+            border-radius: 35px;
+            padding:  10px 35px;
+            text-align:center;
+            position: relative;
+            bottom: 600px;
+            color: white;
+            font-family:Arial;
+            font-size: larger;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .MMT_lux{
+            background-image: url("cream wallpaper.png");      
+            border-radius: 5px;
+            padding: 30px;
+            position: relative;
+            bottom: 580px; 
+            height: 325px;
+            margin-left: 5px;
+            margin-right: 5px;
+            width: calc(100% - 10px);
+            font-style: bold;
+            font-family: sans-serif;
+        }
+
+        .MMT_box{
+            background-color:white;
+            border-bottom-style:groove;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            width:215px;
+            height:120px;
+            padding: 10px;
+            position: relative;
+            bottom: 7px;
+            color: black;
+            text-align: left;        
+        }
+
+        .offers{
+            background-color: white;
+            border: 1px solid;
+            border-style: groove;
+            padding: 10px;
+            border-radius: 4px;
+            margin-left: 5px;
+            margin-right:5px;
+            position: relative;
+            bottom: 560px; 
+            height: 430px;
+            width: calc(100% - 10px); /* leaves room for left+right margin */
+            font-family: sans-serif;
+        }
+
+        .underline{
+            background-color:darkgrey;
+            width: 400px;
+            height: 1px;
+            margin-left: 70px;
+            position: relative;
+            bottom: 10px;
+        }
+
+        .offer_box{
+            background-color:white;
+            border: 1px solid;
+            border-style: groove;
+            border-radius: 8px;
+            width:100%;
+            height:160px;
+            padding: 8px;
+            border-image:round;
+            margin-left: 10px;
+            margin-right: 10px;
+            position: relative;
+            bottom: 920px;
+            display:flex;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            
+        }
+
+        .img_offer{
+            border-radius: 8px;
+            height:100px;
+            width:100px;
+            margin-top: -35px;
+        }
+
+        .offer_text{
+            font-family: sans-serif;
+            flex-grow: 1;
+            padding-left: 8px;
+            margin-top:-30px;
+            color: black;
+            text-transform:capitalize;
+        }
+
+        .offer_text_underline{
+            background-color: red;
+            width: 30px;
+            height: 1px;
+            margin: 8px 0;
+            position: relative;
+            bottom: 12px;
+            font-weight: 700;            
+        }
+
+        .offer_p{
+            font-size:small;
+            position: relative;
+            bottom: 10px;
+        }
+
+        .view_details{
+            color:dodgerblue;
+            font-size: small;
+            font-weight:540;
+            position: absolute;
+            bottom: 8px;
+            right: 8px;
+            font-family: sans-serif;
+            cursor:pointer;
+            text-align:right;
+        }
+
+        .tc_apply{
+            position: absolute; 
+            top: 8px; 
+            right: 10px; 
+            font-size: 10px;
+        }
+
+        .mmt_stores{
+            background-color:rgb(234, 245, 249);
+            padding: 10px;
+            border-radius: 4px;
+            margin-left: 5px;
+            margin-right:5px;
+            position: relative;
+            bottom: 860px; 
+            height: 270px;
+            font-family:'Roboto';        
+        }
+
+        .store_img{
+            border-radius: 28px;
+            padding: 10px;
+            width:340px;
+            height:230px;
+        }
+
+        .img_text{
+            position: absolute;
+            bottom:40px;
+            font-weight: 800;
+            color: white;
+            padding-left: 22px;
+        }
+
+        .bg{
+            background-color:rgba(250, 248, 248, 0.866); 
+            background-size: cover;
+            border-radius: 0px;
+            height: 800px;
+            position: relative;
+            bottom: 875px
+        }
+
+        .download_apk{
+            background-color:white;
+            border-radius: 5px;
+            margin-left:2px;
+            margin-right:2px;
+            position:relative;
+            bottom: 1650px;
+            height:200px;
+            font-family: sans-serif;
+            padding-top:40px;
+            display:flex;
+        }
+
+        .contact_box{
+            background-color: white;
+            border: 1px solid lightgray;
+            position: relative;
+            bottom: 500px;
+            margin-left:40px;
+            position:relative;
+            bottom: 1700px;
+            height:40px;
+            width: 390px;
+            padding-left: 2px;
+        }
+    
+        .contact_box input{
+            border: 1px solid lightgray;
+            border-radius: 4px;
+            padding: 4px;
+            width: 156px;
+            height:40px;
+            position: relative;
+            bottom: 11px;
+
+        }
+
+        .contact_box button{
+            background-color: white;
+            border: 2px solid dodgerblue;
+            border-radius: 4px;
+            padding: 8px;
+            margin-left: -4px;
+            color:dodgerblue;
+            font-weight: bold;
+            width: 166px;
+            height:40px;
+            position: relative;
+            bottom: 11px;
+        }
+
+        .cities_box{
+            background-color:white;
+            border-radius:5px;
+            margin-left:2px;
+            margin-right:2px;
+            position:relative;
+            bottom: 1660px;
+            height:490px;
+        }
+
+        .cities_items{
+            padding: 5px;
+            display:flex;
+            align-items: center;
+            font-family: sans-serif;
+            margin-top: 0px;
+        }
+        
+        .cities_img{
+            border-color: black;
+            border-image:round;
+            border-radius: 50%;
+            width: 45px;
+            height: 50px; 
+            margin: 8px; 
+            padding-top: 4px;
+        }
+
+        .cities_content{
+            color: black;
+            margin-top: 4px;
+            line-height: 1.2;
+            color: dimgray;
+        }
+
+        .details{
+            background-color:rgba(250, 248, 248, 0.866); 
+            position: relative;
+            bottom: 1650px; 
+            padding-top: 25px;
+        }
+
+        .secton{
+            background-color:rgba(240, 239, 239, 0.935); 
+            position: relative;
+            bottom: 1650px; 
+            padding-top: 25px;
+        }
+
+        .footer{
+            background-color:rgb(9, 9, 9); 
+            background-size: 100%;
+            position: relative;
+            height:80px; 
+            color:white;
+            margin: -8px;
+            gap: 8px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .footer span{
+            margin-left: auto;
+        }
+
+        .footer i{
+            margin-top: -4px;
+            font-size: xx-large;
+        }
+
+        
+
+
+        
+    
+    </style>
+</head>
+
+<body>
+
+    <!-- banner part start -->
+        <div>
+             <div class="row">
+                    <div class="col-12 banner">
+                           <div class="row">
+                            <div class="col-1">
+                                <img src="MMT icon" width="100px">    
+                               </div>
+    
+                               <div class="col-2">
+                                <img src="25_years_logo_white.webp" width="100px">    
+                               </div>
+    
+                               <div class="col-3">
+                                <ion-icon name="home"></ion-icon>
+                                List Your Property
+                                <div>
+                                    Grow Your  Business!
+                                </div>   
+                               </div>
+    
+                               <div class="col-3">
+                                <ion-icon name="briefcase"></ion-icon>
+                                    Introducing myBiz
+                                <div>
+                                <small>Business Travel Solution </small>
+                                </div>    
+                               </div>
+    
+                               <div class="col-2">
+                                <i class="fa fa-address-book"></i>
+                                    My Trips
+                                <div>
+                                    <small>Manage Your Bookings</small>
+                                </div>    
+                               </div>
+    
+                               <div class="col-2">
+                                Login or Create account   
+                               </div>
+
+                               <div class="col-1" style="background-color: lightgray;">
+                                <img src="india flag.png" width="20px"/>
+                                   INR | English  <select>
+                                                    <option></option>
+                                   </select> 
+                               </div>
+            
+                           </div>
+                    </div>
+             </div>
+        </div>
+        <!-- banner part end -->
+
+        <!-- service part start -->
+        <div>
+                <div class="row" style="position: relative;">
+                    
+                        <div class="col-1">                                
+                        </div>
+
+                        <div class="col-10 service">
+                            <div class="service_box">
+                                    <i class="bi bi-airplane service_icon"></i>
+                                        <p> Flights </p>
+                            </div>
+
+                            <div class="service_box">
+                                    <i class="bi bi-buildings service_icon"></i>
+                                        <p> Hotels </p>
+                            </div>
+
+                            <div class="service_box">
+                                    <i class="bi bi-house-fill service_icon"></i>
+                                        <p> Homestays & Villas </p>
+                            </div>
+
+                            <div class="service_box">
+                                    <i class="bi bi-umbrella service_icon"></i>
+                                        <p> Holiday Packages </p>
+                            </div>
+
+                            <div class="service_box">
+                                    <i class="bi bi-train-freight-front-fill service_icon"></i>
+                                        <p> Trains </p>
+                            </div>
+
+                            <div class="service_box">
+                                    <i class="bi bi-bus-front service_icon"></i>
+                                        <p> Buses </p>
+                            </div>
+
+                            <div class="service_box">
+                                    <i class="bi bi-car-front-fill service_icon"></i>
+                                        <p> Cabs </p>
+                            </div>
+
+                            <div class="service_box">
+                                    <i aria-hidden="true" class="fa-brands fa-cc-visa service_icon"></i>
+                                        <span> <p>Visa </p></span>
+                            </div>
+
+                            <div class="service_box">
+                                    <i class="bi bi-cash-coin service_icon"></i>
+                                        <p> Forex Card & Currency </p>
+                            </div>
+
+                            <div class="service_box">
+                                    <i class="bi bi-file-person-fill service_icon"></i>
+                                        <p> Travel Insurance </p>
+                            </div>
+                        </div>
+
+                        <div class="col-1">
+                                
+                        </div>
+                </div>
+        </div>
+        <!-- Service part end  -->
+
+        <!-- msg title start -->
+        <div class="col-12 msg">
+            <div class="row">    
+                    <div class="col-3">
+                        &nbsp;
+                            <input type= "radio" name="room book" value="room book"> <b>Upto 4 Rooms</b>
+                        <input type="radio" name="group deals" value="gorup deal"> Group Deals             
+                    </div>    
+                    
+
+                    <div class="col-8">             
+                        <b style="text-align: center; color: grey;"> Book Domestic and International Property Online. To list your property </b>
+                        <a href="#" style="color: deepskyblue;"><strong> Click Here </strong> </a>      
+                    </div>         
+            </div>
+        
+            <div class="row">
+                    <div class="col-3">
+
+                    </div>
+                    
+                    <div class="col-8" style="margin-top: 160px;">
+                        Trending Searches: <button>Dubai, United Arab Emirates</button>  <button> Singapore,Singapore </button>  <button>London, United Kingdom </button>
+                    </div>
+
+                    <div class="col-2">
+
+                    </div>
+            </div>
+        
+        </div>
+        <!-- msg title end -->
+
+        <!-- Booking part start -->
+        <div>                    
+                <div class="row" style="position: relative;">
+                        <div class="col-3 booking" style="margin-left: 40px;">
+                                City, Property name or location
+                            <h3>Goa, India </h3>
+                            India
+                        </div>
+
+                        <div class="col-2 booking">
+                                Check-In <select></select>
+                            <h3>Select Date</h3>
+                        </div>
+
+                        <div class="col-2 booking">
+                                Check-Out <select></select>
+                            <h3> Select Date </h3>
+                        </div>
+
+                        <div class="col-3 booking">
+                                Rooms & Guests <select></select>
+                            <h3> Add Adults & Children </h3>
+                        </div>
+
+                        <div class="col-2 booking" style="margin-right: 40px;">
+                                Price Per Night <select></select>
+                            <h3>₹0-₹1500, ₹1500-₹2500,... </h3>
+                        </div>
+
+                </div>
+        </div>
+         <!-- Booking part end -->
+
+         <!-- Search part start-->
+        <div>
+                <div class="row" style="position: relative;">
+                        <div class="col-5">
+
+                        </div>
+
+                        <div class="col-2 search">
+                        <b> SEARCH</b>
+                        </div>
+
+                        <div class="col-5">
+                            
+                        </div>
+                </div>
+        </div>
+        <!-- search part end -->
+
+        <!-- background part end -->
+
+        <!-- MMT lux part start -->
+        <div>
+                <div class="row MMT_lux" style="position: relative;">
+                        <div class="col-3">
+                            <p style="color: rgb(92, 89, 89);"> <b>INTRODUCING </b>
+                            <br><br> 
+                            <b style="color: rgb(234, 197, 84); font-size: xx-large;"> MMT Luxe Selections </b>
+                            <br><br>
+                            <b style="color: rgb(8, 8, 8);">Escape to the epitome of luxury, packed with signature ameniies and services</b>
+                            <br><br>
+                            <b style="background-color: rgb(234, 197, 84); padding:  10px 30px; border-radius: 40px;"> <small>Learn More</small></b>
+                        </div>
+                        <div class="col-1">
+
+                        </div>
+                       <div class="col-3">
+                            <img src="lux property" width="215px" height="150px" />
+                                <div class="col-4 MMT_box">   
+                                    <p> <b style="font-size: larger;"> Luxe properties in India </b> 
+                                    <small style="color:rgb(0, 0, 0);">Explore by Luxury brands, themes & top picks</small>
+                                    </p>
+                                </div>
+                        </div>
+                        
+                        
+                        <div class="col-3">
+                            <img src="luxe_villa.webp" width="215px" height="150px"/>
+                                <div class="col-4 MMT_box">
+                                    <p> <b style="font-size: larger;"> Luxe Villas </b>
+                                    <small style="color:rgb(98, 91, 91);"><br>Premium Villas with Superlative Experience</small>
+                                    </p>
+                                </div>
+                        </div>
+                        
+                        <div class="col-3">
+                            <img src="lux international" width="215px" height="150px"/>
+                                <div class="col-4 MMT_box">
+                                    <p> <b style="font-size: larger;"> Luxe International </b>
+                                    <small style="color:rgb(98, 91, 91);">Dubai, Maldives, Thailand & More</small>
+                                    </p>
+                                </div>
+                        </div>
+                </div>
+        </div>
+        <!-- MMT lux part end -->
+
+        <!-- offers part start -->
+         <div>
+                      
+                        <div class="row">
+                            <div class="col-12 offers">
+                                <p> <b style="font-size: larger;"> Offers </b>  
+                                    <span style="font-size:small; color: dimgray;"> &nbsp;&nbsp; Hotels &nbsp;&nbsp; All offers &nbsp;&nbsp; Flights &nbsp;&nbsp; Holidays &nbsp;&nbsp; Trains &nbsp;&nbsp; Cabs &nbsp;&nbsp; Bank Offers </span>      
+                                    <span style="color: dodgerblue; font-size:large; float:right">  <strong> VIEW ALL </strong></span>
+                                </p>
+                                <div class="underline">
+
+                                </div>
+                                
+                            </div> 
+                              
+                         </div>
+                        
+                     
+                        <div class="row" style="position: relative;">
+                                <div class="col-5 offer_box">
+                                    <img src="royal OFFERS.png" class="img_offer"/>
+                                    <div class="offer_text">
+                                        <h5>For a royal summer getaway:</h5>
+                                        <div class="offer_text_underline">
+                                        </div>
+                                        <p class="offer_p"  style="color:dimgray;">Enjoy Up to 60% Lower Prices* on Rajasthan’s Luxe Stays!</p>
+                                    </div>
+                                        <span class="view_details">
+                                            <b> VIEW DETAILS </b>
+                                        </span>
+                                        <small class="tc_apply">
+                                            T&C'S APPLY
+                                        </small>
+                                </div>
+                                <div class="col-5 offer_box">
+                                    <img src="Hotel Stay OFFERS.png" class="img_offer"/>
+                                    <div class="offer_text">
+                                        <h5>SIMPlY BETTER STAYS AT GINGER HOTELS:</h5>
+                                        <div class="offer_text_underline">
+                                        </div>
+                                        <p class="offer_p"  style="color:dimgray;">Enjoy FLAT 10% Savings* on Stay + FREE* Breakfast.</p>
+                                    </div>
+                                        <span class="view_details">
+                                            <b> VIEW DETAILS </b>
+                                        </span>
+                                        <small class="tc_apply">
+                                            T&C'S APPLY
+                                        </small>
+                                </div>
+                                <div class="col-2 offer_box">
+                                    <img src="iconic offers.png" class="img_offer"/>
+                                    <div class="offer_text">
+                                        <h5>Enjoy Special EMI Fest</h5>
+                                        <div class="offer_text_underline">
+                                        </div>
+                                        <p class="offer_p"  style="color:dimgray;"> and get up to 40% OFF* for your trips</p>
+                                    </div>
+                                        <span class="view_details">
+                                            <b> BOOK NOW </b>
+                                        </span>
+                                        <small class="tc_apply">
+                                            T&C'S APPLY
+                                        </small>
+                                </div>
+                         </div>
+
+                         <div class="row">
+                                <div class="col-5 offer_box">
+                                    <img src="Memorable OFFERS.png" class="img_offer"/>
+                                    <div class="offer_text">
+                                        <h5>FOR MEMORABLE STAYS AT THE TAJ:</h5>
+                                        <div class="offer_text_underline">
+                                        </div>
+                                        <p class="offer_p"  style="color:dimgray;">Get FLAT 15% Savings* on Stays & More!</p>
+                                    </div>
+                                        <span class="view_details">
+                                            <b> VIEW DETAILS </b>
+                                        </span>
+                                        <small class="tc_apply">
+                                            T&C'S APPLY
+                                        </small>
+                                </div>
+                                <div class="col-5 offer_box">
+                                    <img src="iconic travels OFFERS.png" class="img_offer"/>
+                                    <div class="offer_text">
+                                        <h5>Up to 40% OFF*</h5>
+                                        <div class="offer_text_underline">
+                                        </div>
+                                        <p class="offer_p"  style="color:dimgray;"> on your trips! </p>
+                                    </div>
+                                        <span class="view_details">
+                                            <b> BOOK NOW </b>
+                                        </span>
+                                        <small class="tc_apply">
+                                            T&C'S APPLY
+                                        </small>
+                                </div>
+                                <div class="col-2 offer_box">
+                                    <img src="EMI OFFERS.png" class="img_offer"/>
+                                    <div class="offer_text">
+                                        <h5>For a royal summer getaway:</h5>
+                                        <div class="offer_text_underline">
+                                        </div>
+                                        <p class="offer_p"  style="color:dimgray;">Enjoy Up to 60% Lower Prices* on Rajasthan’s Luxe Stays!</p>
+                                    </div>
+                                        <span class="view_details">
+                                            <b> VIEW DETAILS </b>
+                                        </span>
+                                        <small class="tc_apply">
+                                            T&C'S APPLY
+                                        </small>
+                                </div>
+                     </div>
+         </div>
+         <!-- offer part -->
+
+         <!-- mmt store part start -->
+                <div class="row mmt_stores">      
+                        <div class="col-6">
+                            <h1 style="padding-top: 50px; padding-left: 20px;">  Flagship Hotels Stores on MakeMyTrip </h1>
+                        </div>
+                      
+                        
+                        <div class="col-3 store_img">
+                            <img src="mmt store img_2.png" class="store_img"/>
+                            <span class="img_text"> Tamara Hotels </span>
+                        </div>
+                        <div class="col-3 store_img">
+                            <img src="mmt store img_3.png" class="store_img"/>
+                            <span class="img_text"> Polo Tower </span>
+                        </div>
+                </div>
+            <!-- mmt store part end -->
+
+            <!-- gray bg -->
+             <div class="bg">
+                
+             </div>
+            <!-- gray bg -->
+
+            <!-- download app part start -->
+            <div class="row download_apk">
+                <img src="MMT icon.png" width="80px" height="65px" style="padding-left: 20px;"/>
+                    
+
+                <div class="col-8 ">
+                        <span style="font-size: xx-large;"><b>&nbsp; Download App Now!</b></span>
+                        <p style="font-size:small; color:rgb(34, 33, 33)"> &nbsp;&nbsp;&nbsp;&nbsp;Use code <b> WELCOMEMMT</b> and get Up to <b>Rs.5000 OFF</b> on your first domestic hotel booking</p> 
+                </div>
+                    
+            
+                <div class="col-2">
+                    <img src="MMT app store.png" width="150px" height="120px" style="padding-top: 25px;"/>
+                </div>
+                <div class="col-2">
+                    <img src="mmt_QR.png" width="140px" height="140px"/>
+                </div>
+            </div>
+                
+         <!-- download apk part end -->
+
+        <!-- contact box start from here -->
+          <div class="col-6 contact_box">
+            <img src="india flag.png" width="30px" height="35px"/>
+                <span> <b style="font-size:large;"> <sup> <sup> +91 - </sup></sup> </b> </span>
+                <input type="number" value="contact" placeholder="Enter mobile number"/>
+                <button> GET APP LINK </button> 
+        </div>
+        <!-- contact box end here -->
+            
+        <!-- Cities box start -->
+         <div>
+            <div class="row cities_box">
+                <div class="col-4">
+                    <div class="cities_items">
+                        <img src="city_goa.png" class="cities_img"/>
+                        <div class="cities_content">
+                            <strong> Goa </strong>
+                               <p style="font-size: small; margin: 0px;">
+                                  Hotels, Budget Hotels, Resorts, Best Hotels, North Goa, Villas
+                               </p>
+                        </div>
+                    </div>
+                    <div class="cities_items">
+                        <img src="city_ooty_2.png" class="cities_img"/>
+                        <div class="cities_content">
+                            <strong> Ooty </strong>
+                               <p style="font-size: small; margin: 0px;">
+                                Hotels, Resorts, Cottges, Budget Hotels, Homestay
+                               </p>
+                        </div>
+                    </div>
+                    <div class="cities_items">
+                        <img src="city_jaipur_3" class="cities_img"/>
+                        <div class="cities_content">
+                            <strong> Jaipur </strong>
+                               <p style="font-size: small; margin: 0px;">
+                                Hotels, Resorts, Budget Hotels, Best Hotels, Near Railway Station
+                               </p>
+                        </div>
+                    </div>
+                    <div class="cities_items">
+                        <img src="city_singapur_4.png" class="cities_img"/>
+                        <div class="cities_content">
+                            <strong> Singapur </strong>
+                               <p style="font-size: small; margin: 0px;">
+                                Hotels, 5 Star Hotels, Little India, Orchard Road, Hostels, Hotels in Sentosa 
+                               </p>
+                        </div>
+                    </div>
+                    <div class="cities_items">
+                        <img src="city_phuket_5.png" class="cities_img"/>
+                        <div class="cities_content">
+                            <strong> Phuket </strong>
+                            <p style="font-size: small; margin: 0px;">
+                                Hotels, Resorts, Budget Hotels, Beachfront Properties
+                            </p>
+                        </div>
+                    </div>
+                    <div class="cities_items">
+                        <img src="city_other" class="cities_img"/>
+                        <div class="cities_content">
+                            <strong> Others </strong>
+                            <p style="font-size: small; margin: 0px;">
+                                Puri Hotels, OYO Delhi, Alleppey Houseboat, Mahabaleshwar Hotels
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            
+                    
+                <div class="col-4">
+                    <div class="cities_items">
+                        <img src="city_delhi_6.png" class="cities_img"/>
+                        <div class="cities_content">
+                            <strong> Delhi </strong>
+                               <p style="font-size: small; margin: 0px;">
+                                Hotels, Budget Hotels, Resorts, Best Hotels, Near IGI Airport
+                               </p>
+                        </div>
+                    </div>
+                    <div class="cities_items">
+                        <img src="city_mumbai_7.png" class="cities_img"/>
+                        <div class="cities_content">
+                            <strong> Mumbai </strong>
+                               <p style="font-size: small; margin: 0px;">
+                                Hotels, Budget Hotels, Resorts, Couple Hotels, Near Mumbai Airport
+                               </p>
+                        </div>
+                    </div>
+                    <div class="cities_items">
+                        <img src="city_manali_8.png" class="cities_img"/>
+                        <div class="cities_content">
+                            <strong> Manali </strong>
+                               <p style="font-size: small; margin: 0px;">
+                                Hotels, Resorts, Budget Hotels, Best Hotels, Near Mall Road
+                              </p>
+                        </div>
+                    </div>
+                    <div class="cities_items">
+                        <img src="city_bankok_9.png" class="cities_img"/>
+                        <div class="cities_content">
+                            <strong> Bangkok </strong>
+                               <p style="font-size: small; margin: 0px;">
+                                Hotels, 3 Star Hotels, 5 Star Hotels,Hostels, Budget Hotels, Hotels in Sukhumvit
+                            </p>
+                        </div>
+                    </div>
+                    <div class="cities_items">
+                        <img src="city_bali_10.png" class="cities_img"/>
+                        <div class="cities_content">
+                            <strong> Bali </strong>
+                              <p style="font-size: small; margin: 0px;">
+                                Hotels, Resorts, 5 Star Hotels, Budget Hotels, Villas In Bali, Beach-front Properties 
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="cities_items">
+                        <img src="city_banglore_11.png" class="cities_img"/>
+                        <div class="cities_content">
+                            <strong> Bangalore </strong>
+                               <p style="font-size: small; margin: 0px;">
+                                Hotels, Budget Hotels, Resorts,Near Airport, Guhantara Resort</p>
+                        </div>
+                    </div>
+                    <div class="cities_items">
+                        <img src="city_shimla_12.png" class="cities_img"/>
+                        <div class="cities_content">
+                            <strong> Shimla </strong>
+                               <p style="font-size: small; margin: 0px;">
+                                Hotels, Budget Hotels, Best Hotels, Resorts, Near Mall Road
+                            </p>
+                        </div>
+                    </div>
+                    <div class="cities_items">
+                        <img src="city_dubai_12.png" class="cities_img"/>
+                        <div class="cities_content">
+                            <strong> Dubai </strong>
+                               <p style="font-size: small; margin: 0px;">
+                                Hotels, Budget Hotels, 5 Star Hotels, Apart-Hotels, Homestays
+                            </p>
+                        </div>
+                    </div>
+                    <div class="cities_items">
+                        <img src="city_pattaya_13.png" class="cities_img"/>
+                        <div class="cities_content">
+                            <strong> Pattaya </strong>
+                              <p style="font-size: small; margin: 0px;">
+                                Hotels, Budget Hotels, 5 Star Hotels, Resorts, Central Pattaya, Beachfront Properties
+                            </p>
+                        </div>
+                    </div>
+                    <div class="cities_items">
+                        <img src="city_maldives_14.png" class="cities_img"/>
+                        <div class="cities_content">
+                            <strong> Maldives </strong>
+                               <p style="font-size: small; margin: 0px;">
+                                Hotels, 3 Star Hotels, Resorts, 5 Star Hotels, 4 Star Hotels, Hotels in Male
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- cities box end here -->
+        
+        <!-- details part start -->
+         
+            <section class="details">
+            <div>
+               <h5>  MakeMyTrip </h5>
+                <small> About Us, Investor Relations, Careers, Sustainability, MMT Foundation, Legal Notices, CSR Policy, myPartner - Travel Agent Portal, List your hotel, Partners- Redbus, Partners- Goibibo, Advertise with Us, Holiday-Franchise </small>        
+        
+                <h5>About the Site</h5>
+                <small> Customer Support, MMT Black Loyalty Program, Payment Security, Privacy Policy, Cookie Policy, User Agreement, Terms of Service, Franchise Offices, Make A Payment, Work From Home, Escalation Channel</small>
+
+                <h5> Product Offering</h5>
+                <small> Flights, International Flights, Charter Flights, Hotels, International Hotels, Homestays and Villas, Activities, Holidays In India, International Holidays, Book Hotels From UAE, myBiz for Corporate Travel, Book Online Cabs, Book Bus Tickets, Book Train Tickets, Cheap Tickets to India, Book Flights From US, Book Flights From UAE, Trip Planner, Forex Card, Buy Foreign Currency, Travel Insurance, Travel Insurance for Schengen Visa, Travel Insurance for Asia, Travel Insurance Thailand, Travel Insurance For UAE, Travel Insurance For Indonesia, Travel Insurance For Vietnam, Travel Insurance For Europe, Travel Insurance For USA, Travel Insurance for Singapore, Travel Insurance for Malaysia, Travel Insurance for Sri Lanka, Travel Insurance for United Kingdom, Travel Insurance for Canada, Gift Cards, Gift, Wedding Gift, Anniversary Gift, Birthday Gift, Diwali Gift, Valentines Gift, Farewell Gift, Christmas Gift, New Year Gift, Trip Ideas, Travel Blog, PNR Status, MakeMyTrip Advertising Solutions, One Way Cab</small>
+
+                <h5> Top Cities </h5>
+                <small> Hotels in Thailand, Hotels In Goa, Hotels In Mumbai, Hotels In Mahabaleshwar, Hotels In Matheran, Hotels In Lonavala, Hotels In Delhi, Hotels In Shimla, Hotels In Lansdowne, Hotels In Digha, Hotels In Puri, Hotels In Nainital, Hotels In Shirdi, Hotels In Bangalore, Hotels In Mussoorie, Hotels In Manali, Hotels Near Me, Cheap Hotels, Hotels In Jaipur, Hotels In Udaipur, Hotels In Pune, Hotels In Pondicherry, Hotels In Ooty, Hotels In Kodaikanal, Hotels In Darjeeling, Hotels In Chandigarh, Hotels In Mount abu, Hotels In Ahmedabad, Hotels In Kolkata, Hotels In Ranthambore, Jaisalmer Hotels, Mysore Hotels </small>
+                
+                <h5>States of India</h5>
+                <small> Hotels in Kerala, Hotels in Punjab, Hotels in Gujarat, Hotels in Andhra Pradesh, Hotels in Arunachal Pradesh, Hotels in Assam, Hotels in Bihar, Hotels in Chhattisgarh, Hotels in Haryana, Hotels in Himachal Pradesh, Hotels in Jharkhand, Hotels in Karnataka, Hotels in Ladakh, Hotels in Madhya Pradesh, Hotels in Maharashtra, Hotels in Manipur, Hotels in Meghalaya, Hotels in Mizoram, Hotels in Nagaland, Hotels in Odisha, Hotels in Telangana, Hotels in Tripura, Hotels in Rajasthan, Hotels in Tamil Nadu, Hotels in Uttar Pradesh, Hotels in Uttarakhand, Hotels in West Bengal</small>
+                
+                <h5>Top Properties</h5>
+                <small>W Goa, The Leela Goa, The Tamara Coorg, Evolve Back Coorg, Grand Hyatt Goa, Taj Lake Palace Udaipur, The Leela Palace Udaipur, Grand Hyatt Mumbai, Jw Marriott Chandigarh, Alila Diwa Goa, Evolve Back Hampi, Evolve Back Kabini, Hyatt Regency Mumbai, Le Meridien Delhi, Itc Grand Chola Chennai, Rambagh Palace Jaipur, Le Meridien Goa, Taj Lands End Mumbai, Jai Mahal Palace Jaipur, Vythiri Resort Wayanad, Red Earth Kabini, Taj Mahal Tower Mumbai, The Serai Bandipur, Wildflower Hall Shimla, Azaya Beach Resort Goa, Four Seasons Hotel Mumbai, Taj Fort Aguada Resort & Spa Goa, Itc Maratha Mumbai, Park Hyatt Chennai, Sea Shell Havelock, Spice Tree Munnar, ITC Grand Bharat, St Regis In Mumbai, Chennai Leela Palace, Hyatt Regency Delhi, Hyatt Grand Mumbai, Goa Radisson Blu, Fariyas Hotel, ITC Gardenia Bengaluru, Kumarakom Lake Resort, Taj Delhi Hotel, Surajkund Vivanta, JW Marriott Banglore, Alila Diwa Goa, Westin Goa, Trident Hotel Udaipur, Ritz Carlton Bangalore, Taj Hotel Lucknow, Leela In Kovalam, Trident Hotel Jaipur</small>
+                
+                <h5>Corporate Travel</h5>
+                <small>Business Travel, Corporate Travel, Corporate Travel Management, Corporate Travel Solution, Corporate Hotel Booking, Corporate Flight Booking, Expense Management, Corporate Expense Management, GST on Hotel Rooms, GST on Flight Tickets, Business Travel for SME, GST on International Flight Tickets​, GST on Bus Tickets, GST on Train Tickets, T&E (Travel & Expense), myBiz - Best Business Travel Platform, GST Invoice for Corporate Travel, myBiz for Small Business, Free cancellation on International Flights</small>
+               
+                <h5> Top Homestay Cities</h5>
+                <small>Homestays In Chikmagalur, Homestays In Coorg, Homestays In Sakleshpur, Homestays In Goa, Homestays In Ooty, Homestays In Darjeeling, Homestays In Manali, Homestays In Munnar, Homestays In Wayanad, Homestays In Bengaluru, Homestays In Kasauli, Homestays In Kodaikanal, Homestays In Shimla, Homestays In Mysore, Homestays In Dandeli, Homestays In Dehradun, Homestays In Gokarna, Homestays In Mussoorie, Homestays In Nainital, Homestays In Rishikesh, Homestays In Vagamon, Homestays In Alibaug, Homestays In Kalimpong, Homestays In Mangalore, Homestays In Pondicherry, Homestays In Yercaud, Homestays In Coonoor, Homestays In Kabini, Homestays In Kasol, Homestays In Kurseong, Homestays In Mukteshwar</small>
+                
+                <h5> Trending Resort Cities</h5>
+                <small>Mahabaleshwar Resorts, Resorts In Agra, Resorts In Bhimtal, Resorts In Bordi, GraResorts In Br Hills, Resorts In Chikmagalur, Resorts In Cochin, Resorts In Darjeeling, Resorts In Dehradun, Resorts In Dharamshala, Resorts In Gorai, Resorts In Jaipur, Resorts In Jaisalmer, Resorts In Jodhpur, Resorts In Kanakapura, Resorts In Kollam, Resorts In Kotagiri, Resorts In Lucknow, Resorts In Madikeri, Resorts In Mahabaleshwar, Resorts In Masinagudi, Resorts In Matheran, Resorts In Mount Abu, Resorts In Mumbai, Resorts In Munnar, Resorts In Mussoorie, Resorts In Mysore, Resorts In Nainital, Resorts In Neemrana, Resorts In Kodaikanal</small>
+                </div>
+                <br> <br><br> <br>
+            </details>
+            <!-- details part end -->
+
+            <!-- section part start -->
+            <section>
+                <div class="row section">
+                        <div class="col-5">
+                            <b>Q. How to book a hotel online with MakeMyTrip?</b>
+                            <p>A. Booking a hotel online is easy through MakeMyTrip. 
+                                All you need to do first is to download our app on your Android or iOS device or simply use your computer. 
+                                On the app, tap on the Hotels section on the top left corner and enter the details of the city, the area or the hotel. 
+                                Fill out the check-in and check-out dates, along with the other details and tap Search. 
+                                Use the Sort & Filter options so that you can book one as per your convenience. 
+                                You can also choose hotels according to user reviews and ratings. 
+                                The same follows on our site.
+                            </p>
+                        </div>
+                        <div class="col-2">
+
+                        </div>
+                        <div class="col-5">
+                            <b>Q. How to find the cheapest hotel deals in any city?</b>
+                            <p> A. MakeMyTrip, being the best hotel-booking site in the country, offers several discounts on budget hotels as well. 
+                                If you are looking for the cheapest hotels with amazing deals on the app, you can tap on Sort & Filter option and drag down the Price option from Rs.0 to Rs.500 or from Rs.0 to Rs.1000. 
+                                Choose from the various amenities you would need during your stay including access to Wi-Fi, room service and in-house restaurants. 
+                                The list will first show you the cheapest one on top. 
+                                You can also sort by prices from Low to High, scroll down the list and find your preferred ones with great discounts.
+                            </p>   
+                        </div>
+                </div>
+
+               <div class="row section">
+                    <div class="col-12">
+                        <hr>
+                        <br>
+                    </div>  
+               </div>
+
+                <div class="row section">
+                    <div class="col-5">
+                        <b>Q. How to find the best hotels near me?</b>
+                        <p>A. If you are travelling to a city for the first time and are looking for hotels in the best areas, it is easy to find them on our website and our app. 
+                            Let’s say, you are going to Goa and planning to book one near the most happening beaches. 
+                            Once you have hit the Search option, you will find a list of all the hotels in North Goa near the famed beach areas including Baga and Calangute. 
+                            You can even find out which of the areas are ideal for couples and families. 
+                            Similarly, if you are looking for booking hotels in Mumbai, you can either book ones that are near the city’s major business districts, tourist areas and transportation hubs.
+                        </p>
+                    </div>
+                    <div class="col-2">
+
+                    </div>
+                    <div class="col-5">
+                        <b>Q. Where can I find current deals and offers of MakeMyTrip?</b>
+                        <p> A. MakeMyTrip offers plenty of deals and offers on luxury and budget hotels in India in all the cities, on a daily basis. 
+                            However, these are available for a limited time and they are subject to change the next day. 
+                            You can look for these deals while you are about to book the hotel after narrowing down your choices. 
+                            On the app, you can check a property that has ‘MMT Exclusive Deal’ button below its discounted rate. 
+                            By tapping on it, you would know how many offers are available.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row footer">
+                    <div class="col-12">
+                        <br>
+                        <br>
+                    </div>  
+               </div>
+            </section>
+            <!-- section part end -->
+
+            <footer>
+                <div  class="footer">
+                    <i class="bi bi-twitter"></i>
+                    <i class="bi bi-linkedin"></i>
+                    <i class="bi bi-facebook"></i>
+                    <span> © 2025 MAKEMYTRIP PVT. LTD. </span>
+                </div>
+             </footer>
+         
+        
+
+
+</body>
+</html>

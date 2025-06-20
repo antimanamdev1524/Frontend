@@ -1,0 +1,65 @@
+<!--
+
+border-image:url() 30% round
+border-image:url() 20% stretch
+
+border-image-source 
+ border-image-width
+ border-image-repeat
+ border-image-outset
+     -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    p{
+        border:100px solid transparent;
+        padding:15px;
+        border-image:url(border.jpg) 30% round
+    }
+
+    h6{
+        border:100px solid transparent;
+        padding:15px;
+        border-image:url(border-x.jpg) 20% stretch
+    }
+
+    h5{
+        width:50%;
+        border:100px solid transparent;
+        padding:15px;
+        border-image:url(border-y.jpg) 10% round
+    }
+</style>
+</head>
+<body>
+    <p id="p">
+        abcsndsjkdfndjkfndjkfnjksdfnsdjkfndjknffnsj,fsej kasndjsfsejfsejf skdnsjkefsejkdf j bdsehfseilhfeisfh skldnisedhfsihf
+        sdojdfsiledjfseiojhfeiosfioesfseiohfsjkdfh
+        sihfsiluhfseifh
+        siefhsildhfsil
+    </p>
+
+    <h6 id="h5">
+        abcsndsjkdfndjkfndjkfnjksdfnsdjkfndjknffnsj,fsej kasndjsfsejfsejf skdnsjkefsejkdf j bdsehfseilhfeisfh skldnisedhfsihf
+        sdojdfsiledjfseiojhfeiosfioesfseiohfsjkdfh
+        sihfsiluhfseifh
+        siefhsildhfsil
+    </h6>
+
+    <h5 id="h6">
+            abcsndsjkdfndjkfndjkfnjksdfnsdjkfndjknffnsj,fsej kasndjsfsejfsejf skdnsjkefsejkdf j bdsehfseilhfeisfh skldnisedhfsihf
+        sdojdfsiledjfseiojhfeiosfioesfseiohfsjkdfh
+        sihfsiluhfseifh
+        siefhsildhfsil
+    </h5>
+    
+</body>
+</html>
+

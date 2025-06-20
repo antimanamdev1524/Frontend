@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+         .row{
+            display:flex;
+        }
+        
+            .col-1 {width: 8.33%;}
+			.col-2 {width: 16.66%}
+			.col-3 {width: 25%}
+			.col-4 {width: 33.33%}
+			.col-5 {width: 41.66%;}
+			.col-6 {width: 50%;}
+			.col-7 {width: 58.33%;}
+			.col-8 {width: 66.66%;}
+			.col-9 {width: 75%;}
+			.col-10 {width: 83.33%;}
+			.col-11 {width: 91.66%;}
+			.col-12 {width: 100%;}
+
+            .body{
+                background-color: whitesmoke;
+                background-size: auto;
+            }
+            
+            .header{
+                background-color: white;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                width:100%;
+                height: 55px;  
+                display:flex;   
+                position: relative;    
+                bottom: 5px;
+            }
+
+            .header_content{
+                width:140px;
+                height:140px;
+                position:relative;
+                bottom: 45px;
+                z-index: auto;
+                margin-left:30px;   
+            }
+
+            .header_text{
+                color: rgb(79, 77, 77);
+                font-family: sans-serif;
+            }
+
+            .search_bar{
+                margin-top: 5px;
+                box-sizing:border-box;
+                border-radius: 15px;
+                margin-left:-60px;
+            }
+
+            .search_content{
+                padding: 15px; 
+                border-radius:5px;
+                border-color: lightgrey;
+                border-width: thin;
+                border-style:solid;
+            }
+
+            .bg_car_img{
+                border-radius: 5px;
+                width:93%;
+                height:90%;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 10px;
+            }
+
+            .find_right_car{
+                background-color:white;
+                border-radius: 15px;
+                width:80%;
+                height:250px;
+                position:relative;
+                bottom: 40px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                color: dimgray;
+                font-family: sans-serif;
+                
+            }
+
+
+            .budget_text{
+                margin-left: 50px;
+                margin-top: 10px;
+                font-family:sans-serif;
+                line-break: normal;
+                
+            }
+
+            .underline{
+                background-color:darkgrey;
+                width: 1000px;
+                height: 1px;
+                margin-left: 50px;
+                position: relative;
+                bottom: 10px;
+            }
+
+            .box_container{
+                display: flex;
+                margin-left: 50px;
+            }
+
+            .car_details{
+                background-color: white;
+                border: 1px solid lightgray;
+                border-radius: 15px;
+                width:240px;
+                height:250px;
+                margin-right: 10px;     
+            }
+
+            .brand_container{
+                            display: flex;
+                             margin-left: 50px;
+                        }
+
+             .brands{
+                display: grid;
+                background-color: white;
+                border: 1px solid lightgray;
+                width:165px;
+                height:110px;    
+            }
+
+            .more_brand{
+                display: grid;
+                background-color: white;
+                border: 1px solid lightgray;
+                width:990px;
+                height:50px; 
+            }
+
+            .find_car{
+                background-color:rgba(233, 230, 230, 0.87);
+                border-radius: 5px;
+                width:990px;
+                height:150px; 
+            }
+
+           
+
+            
+                
+        
+    </style>
+</head>
+<body class="body">
+    <!-- header part start -->
+     <div class="row header">
+        <div class="col-2">
+            <img src="img/logo.svg" class="header_content"/>
+        </div>
+
+        <div class="col-1">
+            
+        </div>
+
+        <div class=" col-2 header_text">
+            <h5> NEW CARS </h5> 
+        </div>
+
+        <div class=" col-2 header_text">
+            <h5> USED CARS </h5> 
+        </div>
+
+        <div class=" col-2 header_text">
+            <h5> REVIES & NEWS </h5> 
+        </div>
+
+        <div class="col-3 search_bar">
+            <input type="search" name="search" id="search" placeholder="Search" class="search_content">
+            &nbsp;&nbsp;
+            <i class="bi bi-geo-alt" style="font-size: 22px; color:dimgray;"></i>
+            &nbsp;&nbsp;
+            <i class="bi bi-translate" style="font-size: 22px; color:dimgray;"></i>
+        </div>
+     </div>
+     <!-- header part end -->
+
+     <!-- bg car img -->
+      <div>
+            <img src="img/Bg_Car.jpg" alt="car.jpg" class="bg_car_img">
+      </div>
+     <!-- bg car img end -->
+
+     <!-- find right car part start -->
+      <div class="find_right_car">
+        <p> Find Your Right Car </p> 
+      </div>
+      <!-- find right car part end -->
+
+     <!-- Car budget -->
+      <div class="budget_text">
+        <h2> Cars by Budget </h2>
+        <p style="color:dimgray"> Under 10 Lakh  &nbsp;&nbsp; 10-20 Lakh  &nbsp;&nbsp; 20-30 Lakh &nbsp;&nbsp; Luxury Cars </p>
+      </div>
+      
+      <div class="underline">
+
+      </div>
+     <div class="box_container">
+         <div class="car_details">
+           
+        </div>
+        <div class="car_details">
+            
+        </div>
+        <div class="car_details">
+            
+        </div>
+        <div class="car_details">
+            
+        </div>
+     </div>
+     
+                   <!-- Get offers on popular cars -->
+     <div class="budget_text">
+        <div>
+            <p style="color:dimgray"><small> Showing Avg. Ex-Showroom Price, Select City </small> </p>
+            <p style="color:rgb(77, 75, 75);">All Cars Under 10 Lakh ></p>
+           <br>
+            <h2 style="color:rgb(44, 42, 42);"> Get Offers on Popular Cars </h2>
+        </div>
+     </div>
+
+     <div class="box_container">
+         <div class="car_details">
+           
+        </div>
+        <div class="car_details">
+            
+        </div>
+        <div class="car_details">
+            
+        </div>
+        <div class="car_details">
+            
+        </div>
+     </div>
+     
+                   <!-- all brands -->
+     <div class="budget_text">
+        <br>
+        <h2 style="color:rgb(58, 56, 56);"> All Brands</h2>
+     </div>
+     <div class="brand_container">
+         <div class="brands">
+           
+        </div>
+        <div class="brands">
+            
+        </div>
+        <div class="brands">
+            
+        </div>
+        <div class="brands">
+            
+        </div>
+        <div class="brands">
+            
+        </div>
+        <div class="brands">
+            
+        </div>
+     </div>
+     <div class="brand_container">
+         <div class="brands">
+           
+        </div>
+        <div class="brands">
+            
+        </div>
+        <div class="brands">
+            
+        </div>
+        <div class="brands">
+            
+        </div>
+        <div class="brands">
+            
+        </div>
+        <div class="brands">
+            
+        </div>
+     </div>
+     <div class="brand_container">
+         <div class="more_brand">
+           
+        </div>
+     </div>
+
+
+                    <!-- Find The Cars Of Your Choice -->
+     <div class="budget_text">
+        <br>
+        <h2 style="color:rgb(58, 56, 56);"> Find The Cars Of Your Choice</h2>
+     </div>
+     <br><br>
+     <div class="find_car">
+
+     </div>
+
+
+     
+</body>
+</html>

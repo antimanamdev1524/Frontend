@@ -1,0 +1,838 @@
+<!-- CSS border-radius property -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            box-sizing: border-box
+        }
+        .row{
+            display:flex;
+        }
+        
+            .col-1 {width: 8.33%;}
+			.col-2 {width: 16.66%}
+			.col-3 {width: 25%}
+			.col-4 {width: 33.33%}
+			.col-5 {width: 41.66%;}
+			.col-6 {width: 50%;}
+			.col-7 {width: 58.33%;}
+			.col-8 {width: 66.66%;}
+			.col-9 {width: 75%;}
+			.col-10 {width: 83.33%;}
+			.col-11 {width: 91.66%;}
+			.col-12 {width: 100%;}
+
+
+        #rcorner1{
+            border-radius:25px;
+            background: #73AD21;
+            padding:20px;
+            width: 50px;
+            height: 50px;
+        }
+
+        #rcorner2{
+            border-radius:25px;
+            border:2px solid #73AD21;
+            padding: 15px;
+            width: 50px;
+            height: 50px;
+        }
+
+        #rcorner3{
+            border-radius: 25px;
+            background: url("img/star.png");
+            background-repeat:repeat;
+            padding: 20px;
+            width: 1400px;
+            height: 400px;
+            color: #88240b;
+        }
+
+        #rcorner4{
+            border-radius: 10px 30px 10px 30px; /* top left-right  |   bottom right-left */
+            background-color:#73AD21;
+            padding:20px;
+            width: 100px;
+            height: 100px;
+        }
+
+        #rcorner5{
+            border-radius: 15px / 30px;
+            background-color: #73AD21;
+            padding: 30px;
+            height: 50px;
+            width: 50px;
+        }
+
+        #rcorner6{
+            border-radius: 30px / 15px;
+            background-color: #73AD21;
+            padding: 30px;
+            width: 50px;
+            height: 50px;
+        }
+
+        #rcorner7{
+            border-radius:50%;
+            background-color: #73AD21;
+            padding: 30px;
+            width: 80px;
+            height: 50px;
+        }
+
+        #borderimg{
+            border: 20px solid transparent;
+            padding: 20px;
+            border-image: url("img/border.jpg") 200 round ;
+        }
+
+        #border_img{
+            border: 20px solid red; /* it show red border when image is not visible */
+            padding:20px;
+            border-image: url("img/border-x.jpg") 200 round;
+        }
+
+        #border_image{
+            border: 20px solid red; /* it show red border when image is not visible */
+            padding:20px;
+            border-image: url("img/border.jpg") 200 stretch;
+        }
+
+        #multi_bg{
+            width: 800px;
+            height:500px;
+            border: 5px solid;
+
+
+            background-image: 
+                url("img/red_star.png"),
+                url("img/star.png"), 
+                url("img/moon.png");
+           
+            background-repeat: 
+                repeat-x, 
+                repeat-x, 
+                no-repeat;
+
+            background-position: 
+                top left,
+                bottom left,
+                center;
+
+            background-size: 
+                50px 50px,
+                50px 50px,
+                800px 400px;
+        }
+
+        #T_B_grad{
+            width:80px;
+            height:80px;
+            background-image:linear-gradient(red, yellow);
+        }
+
+        #L_R_grad{
+            width:80px;
+            height: 80px;
+            background-image:linear-gradient(to right, red, yellow);
+        }
+
+        #R_L_grad{
+            width: 80px;
+            height: 80px;
+            background-image:linear-gradient(to left, red, yellow);
+        }
+
+        #R_Y_G_grad{
+            width:80px;
+            height:80px;
+            background-image:linear-gradient(red, yellow, green);
+        }
+
+        #angle_grad{
+            width:80px;
+            height:80px;
+            background-image:linear-gradient(180deg, red, yellow);
+        }
+
+        #radial_grad_1{
+            width: 80px;
+            height:80px;
+            background-image: radial-gradient(red 5%, yellow 15%, green 60%);
+        }
+
+        #radial_grad_2{
+            width: 80px;
+            height:80px;
+            background-image: radial-gradient(circle, red, yellow, green);
+        }
+
+        #repeat_radial{
+            width: 80px;
+            height:80px;
+            background-image:repeating-radial-gradient(red, yellow 10%, green 15%);
+        }
+
+        #conic_grad{
+            width: 80px;
+            height:80px;
+            background-image: conic-gradient(red, yellow, green, blue, black);
+        }
+
+        #conic_grad_1{
+            width:80px;
+            height:80px;
+            background-image: conic-gradient(red 45deg, yellow 90deg, green 210deg);
+        }
+
+        #pie_conic{
+            width:80px;
+            height:80px;
+            border-radius:50%;
+            background-image: conic-gradient(red, yellow, green, blue, black);
+        }
+
+        #pie_chart{
+            width:80px;
+            height:80px;
+            border-radius:50%;
+            background-image: conic-gradient(red 0deg, red 90deg, yellow 90deg, yellow 180deg, green 180deg, green 270deg, blue 270deg);
+        }
+
+        #angle_conic{
+            width:80px;
+            height:80px;
+            border-radius:50%;
+            background-image: conic-gradient(from 90deg, red, yellow, green);
+        }
+
+        #repeating_conic{
+            width:80px;
+            height:80px;
+            border-radius:50%;
+            background-image: repeating-conic-gradient(red 10%, yellow 20%);
+        }
+
+        #multiple_columns{
+            column-count:5;
+            column-gap: 30px;
+            column-rule-style:solid;
+            column-rule-width: 2px;
+            column-rule-color:blue;
+            /* column-rule: 5px solid maroon; */
+            column-width:50px;   
+        }
+
+        #transition{
+            width:40px;
+            height:40px;
+            background-color: #73AD21;
+            transition-delay: 0.2s;
+            transition-property: width;
+            transition-duration: 1s;
+            transition-timing-function: ease-in;
+        }
+
+        #transition:hover {
+            width:180px;
+        }
+
+        #translate_trans{
+            width:100px;
+            height:50px;
+            background-color:#73AD21;
+            border: 4px solid black;
+            transform: translate(50px, 20px);
+        }
+
+        #rotate_trans{
+            width:100px;
+            height:50px;
+            background-color:#73AD21;
+            border:4px solid black;
+            transform:rotate(60deg);
+        }
+
+        #scale_trans{
+            width:100px;
+            height:10px;
+            background-color:cadetblue;
+            border: 2px solid black;
+            transform:scale(1, 4);
+        }
+
+        #scaleX_trans{
+            width:100px;
+            height:50px;
+            background-color:cadetblue;
+            border:4px solid black;
+            transform: scaleX(2)
+        }
+
+        #scaleY_trans{
+            width:100px;
+            height:50px;
+            background-color: cadetblue;
+            border:4px solid black;
+            transform:scaleY(2);
+        }
+
+        #skew_trans{
+            width: 100px;
+            height: 50px;
+            background-color:deeppink;
+            border:4px solid black;
+            transform:skew(30deg, 10deg);
+        }
+
+        #skewX_trans{
+            width:100px;
+            height:50px;
+            background-color:deeppink;
+            border:4px solid black;
+            transform:skewX(20deg);
+        }
+
+        #skewY_trans{
+            width:100px;
+            height:50px;
+            background-color: deeppink;
+            border:4px solid black;
+            transform:skewY(20deg);
+        }
+
+        #matrix_trans{
+            width:100px;
+            height: 50px;
+            background-color:gold;
+            border:4px solid black;
+            transform:matrix(1, -0.3, 0, 1, 0, 0);
+        }
+
+        #x_rotate{
+            width:100px;
+            height: 100px;
+            background-image: url(img/moon.png);
+            border: 4px solid #88240b;
+            transform: rotateX(60deg);
+        }
+
+        #y_rotate{
+            width:100px;
+            height: 100px;
+            background-image: url(img/moon.png);
+            border: 4px solid #88240b;
+            transform: rotateY(45deg);
+        }
+
+        #z_rotate{
+            width: 100px;
+            height: 100px;
+            background-image: url(img/moon.png);
+            border: 4px solid #88240b;
+            transform: rotateZ(0deg);
+        }
+
+        #img_original{
+            width:25%;
+            height:25%;
+        }
+
+        #img_blur{
+            width:20%;
+            height:25%;
+            filter: blur(5px);
+        }
+
+        #img_brightness{
+            width:20%;
+            height:25%;
+            filter: brightness(80%);
+        }
+
+        #img_contrast{
+            width:20%;
+            height:25%;
+            filter: contrast(50%);
+        }
+
+        #img_drop_shadow{
+            width:20%;
+            height:25%;
+            filter: drop-shadow(5px 5px 10px pink);
+        }
+
+        #img_grayscale{
+            width:20%;
+            height:25%;
+            filter: grayscale(60%);
+        }
+
+        #img_hue_rotate{
+            width:20%;
+            height:25%;
+            filter: hue-rotate(45deg);
+        }
+
+        #img_invert{
+            width:20%;
+            height:25%;
+            filter: invert(100%);
+        }
+
+        #img_opacity{
+            width:20%;
+            height:25%;
+            filter: opacity(50%);
+        }
+
+        #img_saturate{
+            width:20%;
+            height:25%;
+            filter: saturate(200%);
+        }
+
+        #img_sepia{
+            width:20%;
+            height:25%;
+            filter: sepia(60%);
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h3>CSS (Cascading Style Sheets) is used to style HTML elements. <br>
+        CSS3 is the latest evolution of CSS, bringing new features like transitions, animations, and responsive design capabilities.</h3>
+    <hr>
+    <h2 style="text-align:center">border-radius:25px;</h2>
+    <p> border-radius property defines the radius of an element's corners.</p>
+    <p id="rcorner1"> round corner</p>
+    <p id="rcorner2"> round corner border</p>
+    <p id="rcorner3">background image  with round border <br> background-repeat:repeat; <br>background: url("img/star.png"); </p>
+    
+    <hr>
+    <h2 style="text-align:center">CSS border-radius - Specify Each Corner </h2>
+    <p>The CSS border-radius property defines the radius of an element's corners.
+
+Tip: This property allows you to add rounded corners to elements!</p>
+    <p>The border-radius property is actually a shorthand property </p>
+    <p style="font-weight:bold; color:rgb(183, 24, 21)">
+        border-top-left-radius <br>
+        border-top-right-radius	 <br>
+        border-bottom-right-radius	<br>
+        border-bottom-left-radius <br>
+    </p>
+    <p id="rcorner4"> all in one border radius</p>
+
+    <hr>
+    <h2 style="text-align:center">elliptical corners:</h2>
+    <p id="rcorner5"> border-radius:15px / 30px;</p>
+    <p id="rcorner6"> border-radius:30px / 15px;</p>
+    <p id="rcorner7"> border-radius:50%; </p>
+    
+    <hr>
+    <h2 style="text-align:center">border-image property </h2>
+    <p>border-image property allows you to specify an image to be used instead of the normal border around an element.</p>
+    <p id="borderimg"> /* round the border */ <br>border: 20px solid transparent; <br> border-image: url(border.png) 30 round;</p>
+    <p id="border_img">/* it show red border when image is not visible */ <br> border: 20px solid red; <br> border-image: url(border.png) 30 round;</p>
+    <p id="border_image">/* stretch the border */ <br> border: 20px solid red; <br> border-image: url(border.png) 30 stretch;</p>
+
+    <hr>
+    <h2 style="text-align:center">CSS Multiple Backgrounds </h2>
+    <p>add multiple background images to one element.
+     <br> the following properties: 
+        <p style="font-weight:bold; color:rgb(183, 24, 21)">
+
+            background-size <br>
+            background-origin <br>
+            background-clip <br>
+        </p>
+    </p>
+    <p> CSS allows multiple background by using <mark> background-image property </mark>
+    <li>Different background images are separated by commas</li>
+    <li> The images are stacked on top of each other, where the first image is closest to the viewer </li></p>
+    <pre>
+        #multi_bg{
+            width: 800px;
+            height:500px;
+            border: 5px solid;
+
+
+            background-image: 
+                url("img/red_star.png"),
+                url("img/star.png"), 
+                url("img/moon.png");
+           
+            background-repeat: 
+                repeat-x, 
+                repeat-x, 
+                no-repeat;
+
+            background-position: 
+                top left,
+                bottom left,
+                center;
+
+            background-size: 
+                50px 50px,
+                50px 50px,
+                800px 400px;
+        }
+    </pre>
+    <p id="multi_bg">
+    </p>
+
+    <hr>
+    <h2 style="text-align:center">background origin </h2>
+    <p>The CSS <mark>background-origin</mark> property specifies where the background image is positioned</p>
+    <pre>
+         ________________________________________________________________________________________________
+        |____________________________________..... background-origin ....._______________________________|
+        |               |                                                                                |
+        | border-box    |  the background image starts from the upper left corner of the border          |
+        |               |                                                                                |
+        | padding-box   |  the background image starts from the upper left corner of the padding edge    |   
+        |               |                                                                                |
+        | content-box   |  the background images starts from the upper left corner of the content        |
+        |_______________|________________________________________________________________________________|
+         
+    </pre>
+
+    <h2 style="text-align:center">background clip </h2>
+    <p>The CSS <mark>background-clip </mark> property specifies the painting area of the background.</p>
+    <pre>
+         ________________________________________________________________________________________________
+        |____________________________________..... background-clip ....._________________________________|
+        |               |                                                                                |
+        | border-box    |  the background is painted to the outside edge of the border                   |
+        |               |                                                                                |
+        | padding-box   |  the background is painted to the outside edge of the padding                  |   
+        |               |                                                                                |
+        | content-box   |  the background is painted within the content box                              |
+        |_______________|________________________________________________________________________________|
+         
+    </pre>
+
+    <hr>
+    <h2 style="text-align:center">CSS Color Keywords</h2>
+    <p> 
+            <mark>transparent:</mark> 
+             <br>&nbsp;&nbsp;&nbsp; transparent keyword is used to make a color transparent.
+             <br>&nbsp;&nbsp;&nbsp; This is ofter used to make a transparent background color for an element.
+             <br>
+              <strong>
+            <pre> 
+                background-color: transparent; 
+            </pre></strong>
+        <br><br>
+            <mark>currentcolor:</mark>
+             <br>&nbsp;&nbsp;&nbsp;currentcolor keyword is like a variable that holds the current value of the color property of an element.
+             <br>&nbsp;&nbsp;&nbsp; it means border color will be same as text color.
+             <br>
+                <strong> 
+                <pre>
+                color: blue; 
+                border: 10px solid currentcolor; 
+               </pre></strong>
+        <br><br>
+         
+            <mark>inherit </mark>
+             <br>&nbsp;&nbsp;&nbsp;  inherit keyword specifies that a property should inherit its value from its parent element.
+                <strong>
+                <pre>
+                    div {
+                           border: 2px solid red;
+                        }
+
+                    span 
+                        {
+                            border: inherit;
+                        }
+                </pre>
+                </strong>
+    </p>
+    <hr>
+
+    <h2 style="text-align:center">CSS Gradient</h2>
+    <p> CSS gradients display smooth transitions between two or more specified colors.</p>
+    <pre>
+        <li> <b>Linear Gradiants:</b> Goes down/up/left/right/diagonally</li>
+        <strong>
+        background-image: linear-gradient(red, yellow);
+        <p id="T_B_grad"></p>
+
+        background-image: linear-gradient(to bottom right, red, yellow);
+        <p id="L_R_grad"></p>
+
+        background-image: linear-gradient(to left, red , yellow);
+        <p id="R_L_grad"></p>
+
+        background-image: linear-gradient(red, yellow, green);
+        <p id="R_Y_G_grad"></p>
+
+        background-image: linear-gradient(180deg, red, yellow);
+        <p id="angle_grad"></p>
+
+        background-image: linear-gradient(to bottom right, red, yellow);
+        background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+        
+        <b>Using Transparency:</b>
+        background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+        
+        <b>Repeating a linear-gradient:</b>
+        background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
+        </strong>
+        <li> <b>Radial Gradiants:</b> Defined by their center</li>
+       <strong>
+        <pre>
+            
+            background-image: radial-gradient(red, yellow, green);
+            <p id="radial_grad_1"></p>
+
+            background-image: radial-gradient(circle, red, yellow, green);
+            <p id="radial_grad_2"></p>
+
+             background-image:repeating-radial-gradient(red, yellow 10%, green 15%);
+            <p id="repeat_radial"></p>
+
+        </pre>
+        </strong>
+
+        <li> <b>Conic Gradients:</b> Rotated around a center point</li>
+        <strong>
+            <pre>
+                 background-image: conic-gradient(red, yellow, green);
+                 <p id="conic_grad"></p>
+
+                 background-image: conic-gradient(red 45deg, yellow 90deg, green 210deg);
+                 <p id="conic_grad_1"></p>
+
+                 background-image: conic-gradient(red, yellow, green, blue, black);
+                 border-radius: 50%;
+                 <p id="pie_conic"></p>
+            
+                 background-image: conic-gradient(red 0deg, red 90deg, yellow 90deg, yellow 180deg, green 180deg, green 270deg, blue 270deg);
+                 border-radius: 50%;
+                 <p id="pie_chart"></p>
+            
+                 background-image: conic-gradient(from 90deg, red, yellow, green);
+                 <p id="angle_conic"></p>
+
+                 <b>Repeating a Conic Gradient</b>
+                 background-image: repeating-conic-gradient(red 10%, yellow 20%);
+                 border-radius: 50%;
+                 <p id="repeating_conic"></p>
+            </pre>
+        </strong>      
+    </pre>
+
+    <hr>
+    <h2 style="text-align:center">CSS Multiple Columns</h2>
+    <p> The CSS multi-column layout allows easy definition of multiple columns of text-just like in newspapers:</p>
+    <pre>
+            column-count:5;
+            column-gap: 40px;
+            column-rule-style:solid;
+            column-rule-width: 2px;
+            column-rule-color:blue;
+            /* column-rule: 5px solid maroon; */
+            column-width:50px;
+    </pre>
+    <p id="multiple_columns">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, tempore quae consequatur cupiditate quisquam eos fugit totam adipisci placeat tenetur, ratione possimus? Necessitatibus, ea. Omnis iure repudiandae recusandae saepe voluptates!</p>
+    <hr>
+
+    <h2 style="text-align:center">CSS Image Filter Effects</h2>
+    <p>The CSS filter property is used to add visual effects to elements.</p>
+    <pre>
+        blur()
+        brightness()
+        contrast()
+        drop-shadow()
+        grayscale()
+        hue-rotate()
+        invert()
+        opacity()
+        saturate()
+        sepia()
+
+        <strong> 
+            filter: blur(2px);
+            filter: brightness(150%);
+            filter: contrast(150%);
+            filter: drop-shadow(8px 8px 10px gray);
+            filter: grayscale(60%);
+            filter: hue-rotate(200deg);
+            filter: hue-rotate(-90deg);
+            filter: invert(0.3);
+            filter: opacity(80%);
+            filter: saturate(100%);
+            filter: sepia(60%);
+
+        </strong>
+    </pre>
+
+    <hr>
+    <h2 style="text-align:center">CSS Transitions</h2>
+    <p>CSS transitions allows you to change property values smoothly, over a given duration.</p>
+    <pre style="color:red">
+    
+        transition-delay: 1s;
+        transition-property: width;
+        transition-duration: 2s;
+        transition-timing-function: linear;
+        
+        transition-timing-function:
+        ease: slow to fast
+        linear: same speed from start to end
+        ease-in: start with slow
+        ease-out: end with slow
+        ease-in-out: start to end slow transition  
+    </pre>
+
+    <p id="transition"></p>
+    <hr>
+
+    <h2 style="text-align:center">CSS 2D Transforms</h2>
+    <p>CSS 2D transformations allow you to move, rotate, scale and skew elements.</p>
+    <pre>
+        <mark>translate()</mark> function moves an element from its current position.
+                <b> transform:translate(50px, 20px);</b>
+                <div id="translate_trans"> </div>
+                <hr>
+
+        <mark>rotate()</mark>function rotates an element clockwise or counter-clockwise according to a given degree.
+                <b>transform:rotate(60deg);</b><br>
+                <div id="rotate_trans"></div>
+                <hr>
+                
+        <mark>scale()</mark> function increases or decreases the size of an element.
+                <b>transform:scale(1, 4)</b>
+                        <pre>
+                             Before applying scale:        After applying scale:
+
+                                Width: 100px                   Width remains: 100px (1 × 100)
+                                Height: 10px                   Height becomes: 40px (4 × 10)
+                        </pre>
+                <div id="scale_trans"></div>
+                <hr>
+
+        <mark>scaleX()</mark> function increases or decreases the width of an element.
+                <b>transform:caleX(2);</b>
+                <div id="scaleX_trans"></div>
+                <hr>
+ 
+        <mark>scaleY()</mark> function increases or decreases the height of an element.
+                <b>transform:scaleY(2);</b><br>
+                <div id="scaleY_trans"></div>
+                <hr>
+        
+        <mark>skew()</mark> function skews an element along the X and Y axis by the given angle.
+                <b>transform:skew(20deg, 10deg)</b>
+                <b>transform:skew(20deg)</b> (bydefault it will be take x axis)
+                
+                <span>skew() function tlit the element
+                        20deg → X-axis skew (horizontal tilt)
+                        10deg → Y-axis skew (vertical tilt)
+                </span>
+                <div id="skew_trans"></div>
+                <hr>
+
+        <mark>skewX()</mark>function skews an element along the X axis by the given angle.
+                <b>transform:skewX(20deg);</b>
+                <div id="skewX_trans"></div>
+                <hr>
+
+        <mark>skewY()</mark> function skews an element along the Y axis by the given angle.
+                <b>transform:scaleY(20deg)</b>
+                <div id="skewY_trans"></div>
+                <hr>
+
+        <mark>matrix()</mark> function combines all the 2D transform functions into one.
+                 matrix() function take six parameters are as: 
+                              <b>transform: matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY())</b>
+                              <b>transform: matrix(2, -0.3, 0, 1, 0, 0);</b>
+                              <span>
+                               _________________________________
+                              |  a |  Horizontal scale (scaleX) |
+                              |  b |  Skew Y                    |
+                              |  c |  Skew X                    |
+                              |  d |  Vertical scale (scaleY)   |
+                              |  e |  Translate X (move right)  |
+                              |  f |  Translate Y (move down)   |
+                              |_________________________________|                               </span>
+                              <div id="matrix_trans"></div>
+                              <hr>
+    </pre>
+
+    <h2 style="text-align:center">CSS 3D Transforms </h2>
+    <p> CSS 3D transforms allows you to rotate element according to X, Y or Z-axis </p>
+    <pre>
+        <mark>rotateX()</mark> function rotates an element around its X-axis
+                  <b>transform: rotateX(60deg)</b>
+                  <div id="x_rotate">x-rotate</div>
+
+        <mark>rotateY()</mark> function rotates an element around its Y-axis
+                 <b>transform: rotateY(45deg)</b>
+                 <div id="y_rotate">y-rotate</div>
+
+        <mark>rotateZ()</mark> function rotates an element around its Z-axis
+                 <b>transform:rotateZ(30deg)</b>
+                 <div id="z_rotate">z-rotate</div>
+    </pre>
+    <hr>
+
+    <h2 style="text-align: center;">Filter</h2>
+    <p><b>The CSS filter property is used to add visual effects to elements.</b>
+        <br>
+        filter properties with example:
+    </p>
+        
+        <pre>
+        original image
+        <img src="img/penguin.jpg" id="img_original"/>
+        </pre>
+
+        <pre> 
+            blur()                   brightness()                    contrast()                     drop-shadow()                     grayscale()
+        </pre>
+       <div class="row">
+                <img src="img/penguin.jpg" alt="blur" id="img_blur"/>
+
+                <img src="img/penguin.jpg" alt="brightness" id="img_brightness"/>
+
+                <img src="img/penguin.jpg" alt="contrast" id="img_contrast"/>
+
+                <img src="img/penguin.jpg" alt="drop-shadow" id="img_drop_shadow"/>
+
+                <img src="img/penguin.jpg" alt="grayscale" id="img_grayscale"/>
+       </div>
+       <pre> 
+            hue-rotate()                   invert()                    opacity()                     saturate()                     sepia()
+        </pre>
+
+
+       <div class="row">
+            <img src="img/penguin.jpg" alt="hue-rotate" id="img_hue_rotate"/>
+
+            <img src="img/penguin.jpg" alt="invert" id="img_invert"/>
+
+            <img src="img/penguin.jpg" alt="opacity" id="img_opacity"/>
+
+            <img src="img/penguin.jpg" alt="saturate" id="img_saturate"/>
+
+            <img src="img/penguin.jpg" alt="sepia" id="img_sepia"/>
+       </div>
+       <hr>
+
+    
+</body>
+</html>
