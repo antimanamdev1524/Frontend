@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .wrap{
+           display: flex;
+           justify-content: center;
+           align-items: center;
+        }
+
+       .border{
+           background-color: rgb(199, 223, 245);
+           box-sizing:border-box;
+           border-style: double;
+           width: 200px;
+           height: 300px;
+           margin: 5px;
+           padding: 5px;
+           display: flex;
+           justify-content: center;
+       }
+
+       .image{
+           width:65px;
+           height:70px;
+           border: 2px solid black;
+       }
+
+       .data{
+            box-sizing:content-box;
+            color: black;
+            display: inline;
+            text-align: center;
+       }
+
+       .p{
+           text-align:left;
+           font-size: 10px;
+           display: block;
+           line-height: 15px;
+       }
+
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="border">
+            <div class="data">
+                <h2> Identity Card </h2>
+                <img src="img/id.jpg" class="image">
+                <h3> Assistant Professor <br> <b style="font-size: x-small;">(Computer Science) </b> </h3>
+                
+                <p class="p">
+                    <b> Name:</b> Antima Namdev <br>
+                    <b> Father Name:</b> Mr. Umashankar Namdev <br>
+                    <b> DOB:</b> 15/10/1996 <br>   
+                </p>  
+            </div>
+        </div>
+    </div>
+</body>
+</html>

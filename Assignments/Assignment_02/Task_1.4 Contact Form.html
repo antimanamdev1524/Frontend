@@ -3,103 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Registration Form</title>
      <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="Task_1.4 Contact Form.css" rel="stylesheet">
     
-    <style>
-        .form{
-            border: 4px solid black;
-            margin: 5px;
-            display:flex;
-            
-        }
-
-        .image{
-            background-image: url(img/bg.jpg);
-            background-repeat: no-repeat;
-            width: 100%;
-            height: 600px;
-            padding: 120px 50px;
-            color: white;
-        }
-
-        .content{
-            background-color: rgb(248, 196, 179);
-            width: 100%;
-            height: 600px;
-            padding: 5px;
-        }
-
-        .p{
-            background-color: white;
-            border: 1px solid black;
-            padding: 5px;
-            padding-bottom: 0px;
-        }
-
-        .input{
-            padding: 5px;
-            margin-left:-8px;
-            width: 80%;
-        }
-        
-    </style>
 </head>
 <body>
-    <div class="row">
-        <form class="form">
-            <div class="col-6 image">
-                <span><i class="bi bi-geo-alt-fill"></i> Address:<br><br>
-                    &nbsp;F-401, Madhav Homes, Vastral, Ahemdabad, Gujrat, India(382418).
-                </span><br><br>
-
-                <span><i class="bi bi-telephone-fill"></i> Contact:<br><br>
-                    &nbsp;+91 81208 XXXXX
-                </span><br><br>
-
-                <span><i class="bi bi-envelope-fill"></i> Email:<br><br>
-                    &nbsp;antimanamdevXXXX@gmail.com
-                </span><br><br>
-            </div>
-
-            <div class="col-6 content">
-                <h2> Send Us a Message </h2>
-
-                <p class="p"> TELL US YOUR NAME*
-                    <br>
-                    <input class="input" type="First Name" value="first name" placeholder="First Name">
-                    <input class="input" type="Last Name" value="last name" placeholder="Last Name">
-                </p>
-                <br>
-
-
-                <p class="p"> ENTER YOUR EMAIL*
-                    <br>
-                    <input class="input" type="email" value="email" placeholder="Eg. example@gmail.com">
-                </p>
-                <br>
-
+    <div class="form">
+        <form class="registration" action="#" method="POST">
+                <h2 style="text-align: center;"> Registration</h2>
                 
-                <p class="p"> ENTER PHONE NUMBER 
-                    <br>
-                    <input class="input" type="tel" value="mobile" placeholder="Enter 10-Digit Mobile Number">
-                </p>
-                <br>
+                <div class="row">
+                    <div class="col-6">
+                        <input type="text" placeholder="Full Name">
+                        <input type="Email" placeholder="Email">
+                        <input type="password" placeholder="Password">
+                    </div>
 
-                <p class="p">MESSAGE*
-                    <br>
-                    <textarea name="message" placeholder="Write us a message"> </textarea>
-                </p>
-                <br>
+                    <div class="col-6">
+                        <input type="text" placeholder="Username">
+                        <input type="tel" placeholder="Phone Number">
+                        <input type="password" placeholder="Confirm Password">
 
-                <button>SEND MESSAGE</button>
+                    </div>
+                </div>
+
+                <div class="checkbox">
+                    <input type="checkbox"> Send me E-mails about the News.
+                </div>
                 
-
-
-            </div>
+                <button class="button" > Register</button>
         </form>
-    </div>
-    
+    </div> 
 </body>
 </html>

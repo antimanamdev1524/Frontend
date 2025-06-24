@@ -1,0 +1,134 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <style>
+            *{
+                box-sizing: border-box;
+                margin:0px;
+            }
+
+            .row
+            {
+                display:flex;
+                flex-wrap:wrap;
+            }
+            
+            [ class*= "col-"]
+                {
+                    width:100%;
+                }
+
+            /* class work on Desktop >768 */
+            @media only screen and (min-width: 768px) 
+            {
+                .col-1 {width: 8.33%;}
+                .col-2 {width: 16.66%;}
+                .col-3 {width: 25%;}
+                .col-4 {width: 33.33%;}
+                .col-5 {width: 41.66%;}
+                .col-6 {width: 50%;}
+                .col-7 {width: 58.33%;}
+                .col-8 {width: 66.66%;}
+                .col-9 {width: 75%;}
+                .col-10 {width: 83.33%;}
+                .col-11 {width: 91.66%;}
+                .col-12 {width: 100%;}
+            }
+
+                    /* <!-- •	A header. 
+        •	A sidebar on the left. 
+        •	A main content area in the center. 
+        •	A footer. Additional Requirements: 
+        •	Use Flexbox to position and align the elements. 
+        •	Apply different justify-content and align-items properties to observe their effects. 
+        •	Ensure the layout is responsive, adjusting for smaller screens. 
+        --> */
+
+        body{
+            text-align: center;
+            font-family: sans-serif;
+            font-size: large;
+        }
+
+        nav{
+            background-color: mediumturquoise;
+            width: 100%;
+            height: 50px;
+            text-align: center;
+            padding: 8px;
+        }
+
+        aside{
+            background-color: rgb(232, 209, 115);
+            width: 100%;
+            height: 400px;
+            padding: 50px;
+            line-height: 25px;
+
+        }
+
+        main{
+            background-color: cornflowerblue;
+            width: 100%;
+            height: 400px;
+            padding: 50px;
+            line-height: 25px;
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            padding: 5px;
+        }
+     
+        </style> 
+</head>
+ <body>
+    <div class="row">
+        <nav>
+            <h1> Annu's Fashion</h1>
+        </nav>
+    </div>
+
+    <div class="row">
+        <div class="col-3">
+            <aside>
+                <h2> Sidebar </h2>
+                <br>
+                <ol style="text-align: left;">
+                    <li> Home </li>
+                    <li> About us </li>
+                    <li> Service </li>
+                    <li> Contact us </li>
+                </ol>
+            </aside>
+        </div>
+        <div class="col-9">
+            <main>
+                <h2> About us </h2>
+                <br>
+                <span>
+                    Ecommerce can feel a little impersonal at times. Shoppers experience your brand through a screen instead of in person, where they can touch and handle the products before making a purchase. As a result of this detachment, shoppers might forget your brand or even mix you up with a competitor. To avoid this, it’s important […]
+                </span>
+
+                <br>
+                <a href="#"> Click here for more information</a> 
+            
+                
+            </main>
+        </div>
+
+    </div>
+
+
+    <footer>
+       © 2025 My Website
+    </footer>
+
+
+    
+ </body>
+ </html>
