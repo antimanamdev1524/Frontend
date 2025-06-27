@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- google font url -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+       <style>
+
+        *{
+            box-sizing:border-box;
+            margin: 0px;
+        }
+
+            .row
+                {
+                  display:flex;
+                }
+                            
+                [ class*= "col-"]
+                    {
+                        width:100%;
+                    }
+
+                /* class work on smaller screen >600 */
+                @media only screen and (min-width: 600px) 
+                {
+                    .col-1 {width: 8.33%;}
+                    .col-2 {width: 16.66%;}
+                    .col-3 {width: 25%;}
+                    .col-4 {width: 33.33%;}
+                    .col-5 {width: 41.66%;}
+                    .col-6 {width: 50%;}
+                    .col-7 {width: 58.33%;}
+                    .col-8 {width: 66.66%;}
+                    .col-9 {width: 75%;}
+                    .col-10 {width: 83.33%;}
+                    .col-11 {width: 91.66%;}
+                    .col-12 {width: 100%;}
+                }
+                
+                .title{
+                    width: 100%;
+                    background-color: cornflowerblue;
+                    padding: 15px;
+                    font-style: "Poppins", sans-serif;
+                    text-align: center;
+                    
+                }
+
+                .subtitle{
+                    width: 100%;
+                    background-color: rgb(164, 191, 240);
+                    padding:8px;
+                    font-family: Arial;
+                    text-align:center;
+
+                }
+
+                .content{
+                    width: 100%;
+                    font-size:medium;
+                    line-height: 20px;
+                    padding: 10px;
+                    background-color: bisque;
+                    
+                }
+
+
+       </style>
+
+        
+</head>
+<body>
+
+        <div class="title">
+        <h1> Welcome!</h1>
+    </div>
+
+    <div class="subtitle">
+          <h3>to our new blog </h3>  
+    </div>
+
+    <div class="content">
+        <p>
+            Web fonts allow Web designers to use fonts that are not installed on the user's computer.<br>
+
+When you have found/bought the font you wish to use, just include the font file on your web server, and it will be automatically downloaded to the user when needed.<br>
+
+Your "own" fonts are defined within the CSS @font-face rule.
+        </p>
+        <pre>
+               @media only screen and (min-width: 600px) 
+                {
+                    .col-1 {width: 8.33%;}
+                    .col-2 {width: 16.66%;}
+                    .col-3 {width: 25%;}
+                    .col-4 {width: 33.33%;}
+                    .col-5 {width: 41.66%;}
+                    .col-6 {width: 50%;}
+                    .col-7 {width: 58.33%;}
+                    .col-8 {width: 66.66%;}
+                    .col-9 {width: 75%;}
+                    .col-10 {width: 83.33%;}
+                    .col-11 {width: 91.66%;}
+                    .col-12 {width: 100%;}
+                }
+        </pre>
+
+    </div>
+</body>
+</html>
