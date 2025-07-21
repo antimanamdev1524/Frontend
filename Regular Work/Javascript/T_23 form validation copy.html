@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="myform" action="" method="POST" onsubmit="return validation()">
+        <table border="2" align="center">
+            <tr>
+                <th> Registration1 </th>
+            </tr>
+            <tr>
+                <th> User First Name: </th>
+                <td><input type="text" name="ufn" id="ufn"></td>
+            </tr>
+            <tr>
+                <th> User Last Name: </th>
+                <td>
+                    <input type="text" name="uln" id="uln">
+                    <p id="ulnmsg1" style="color:red"></p> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" name="submit"/>
+                </td>
+            </tr>
+        </table>
+    </form>
+    
+    <script>
+        function validation()
+        {
+            var ufn=document.getElementById('ufn').value;
+            if(ufn=="")
+                {
+                    alert('User First Name Field is required')
+                    return false;
+                }
+            
+            var uln=document.getElementById('uln').value;
+            if(uln=="")
+                {
+                    document.getElementById('uln').innerHTML="User Last Name Field is required";
+                    document.getElementById('uln').setAttribute('style', 'border:solid red');
+                    return false;
+                }
+        }
+    </script>
+
+    <hr>
+    <form name="myform" action="" method="" onsubmit="return validation1()">
+        <table border="2" align="center">
+            <tr>
+                <th> Registration2 </th>
+            </tr>
+            <tr>
+                <th> User First Name: </th>
+                <td><input type="text" name="ufn"></td>
+            </tr>
+            <tr>
+                <th> User Last Name: </th>
+                <td>
+                    <input type="text" name="uln">
+                    <p id="ulnmsg1" style="color:red"></p> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" name="submit"/>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <script>
+        function validation1()
+        {
+            var ufn=document.forms['myform']['ufn'].value;
+            if(ufn=="")
+                {
+                    alert('form 2 User First Name Field is required');
+                    return false;
+                }
+
+            var uln=document.forms['myform']['uln'].value;
+            if(uln=="")
+                {
+                    document.getElementById('ulnmsg1').innerHTML='User Last Name Field is required'
+                    return false;
+                }
+        }
+    </script>
+    <hr>
+
+    <form action="" method="post" onsubmit="return validation3(this)">
+        <table border="2" align="center">
+            <tr>
+                <th> Registration 3</th>
+                <th> 
+                    <p style="color: red;" id="msg"></p>
+                </th>
+            </tr>
+            <tr>
+                <th> User First Name: </th>
+                <td><input type="text" name="ufn" id="ufn"></td>
+            </tr>
+            <tr>
+                <th> User Last Name: </th>
+                <td><input type="text" name="uln" id="uln"></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" name="submit"/>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <script>
+        function validation3(arg)
+        {
+            if(arg.ufn.value=="")
+                {
+                    document.getElementById('msg').innerHTML='User First Name Field is required';
+                    arg.ufn.focus();
+                    return false;
+                }
+
+            if(arg.uln.value=="")
+                {
+                    document.getElementById('msg').innerHTML='User Last Name Field is required';
+                    arg.uln.focus();
+                    return false;
+                }
+        }
+    </script>
+</html>

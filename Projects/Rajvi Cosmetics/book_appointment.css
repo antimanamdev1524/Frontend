@@ -1,0 +1,355 @@
+
+         *{
+            box-sizing: border-box;
+            margin:0px;
+        }
+
+        .row
+        {
+            display:flex;
+            flex-wrap:wrap;
+        }
+        
+         [ class*= "col-"]
+            {
+                width:100%;
+            }
+
+        /* class work on tablet >600 && <768 */
+        @media only screen and (min-width: 600px) 
+        {
+            .col-s-1 {width: 8.33%;}
+            .col-s-2 {width: 16.66%;}
+            .col-s-3 {width: 25%;}
+            .col-s-4 {width: 33.33%;}
+            .col-s-5 {width: 41.66%;}
+            .col-s-6 {width: 50%;}
+            .col-s-7 {width: 58.33%;}
+            .col-s-8 {width: 66.66%;}
+            .col-s-9 {width: 75%;}
+            .col-s-10 {width: 83.33%;}
+            .col-s-11 {width: 91.66%;}
+            .col-s-12 {width: 100%;}
+        }
+
+        /* class work on Desktop >768 */
+        @media only screen and (min-width: 768px) 
+        {
+            .col-1 {width: 8.33%;}
+            .col-2 {width: 16.66%;}
+            .col-3 {width: 25%;}
+            .col-4 {width: 33.33%;}
+            .col-5 {width: 41.66%;}
+            .col-6 {width: 50%;}
+            .col-7 {width: 58.33%;}
+            .col-8 {width: 66.66%;}
+            .col-9 {width: 75%;}
+            .col-10 {width: 83.33%;}
+            .col-11 {width: 91.66%;}
+            .col-12 {width: 100%;}
+        }
+
+        body{
+            font-family: sans-serif;
+        }
+
+        .header{
+            background-color: rgb(250, 234, 230);
+            padding:15px;
+            color: dimgrey;
+            padding-left: 60px;
+            padding-right: 60px;
+            font-size: small;
+        }
+
+        .icon{
+            float: right;
+            font-size: 15px;
+            margin-left: 10px;
+            color: darksalmon;
+        }
+
+        .icon:hover{
+            color:salmon;
+        }
+
+        .nav{
+            padding: 10px;
+            display: flex;
+            margin: 0px 50px 0px 50px;
+            font-family: sans-serif;
+        }
+
+        .h4{
+            padding: 10px;
+            margin: 10px 0px 0px 30px;
+            position:relative;
+            display: inline-block;
+            color: black;
+            font-style: normal;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .h4_dropdown{
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 200px;
+            padding: 25px 15px;
+            z-index: 1;
+        }
+
+        .h4_dropdown a {
+            color: black;
+            text-decoration: none;   
+            font-style: normal;
+            font-weight: 400;
+            display: block;         
+            padding: 8px 0;
+        }
+
+        .h4:hover .h4_dropdown{
+            display: block;
+        }
+
+        .h4:hover{
+            color:salmon;
+        }
+
+        .bg{
+             background: 
+                linear-gradient(rgba(38, 47, 39, 0.6), rgba(38, 47, 39, 0.6)),
+                url('img/bg_img.jpg');
+            background-size:cover;
+            background-repeat: no-repeat;
+            height:450px;
+
+            /* background-image: url(img/bg_img.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height:500px; */
+        }
+
+        .bg_text{
+            color: white;
+            text-align: center;
+            font-family: sans-serif;
+            padding: 170px;   
+            line-height: 50px;
+        }
+
+        .appointment{
+            display: inline-block;
+            text-align: center;
+            outline-style: solid;
+            outline-width: 2px;
+            outline-color: rgb(244, 237, 237);
+            padding: 10px;
+        }
+
+        .appointment:hover{
+            background-color: white;
+            color: black;
+        }
+
+        /* .carasoul_indicator{
+            width:25px;
+            height: 25px;
+            background: transparent;
+            border: 1px solid #FFFFFF;
+            transition: .5s;
+            align-items: bottom;
+        } */
+
+        .about{
+            display:inline-block;
+            color: salmon; 
+            background-color:rgb(250, 234, 230);
+            margin-top: 80px;
+            padding: 10px 20px;
+            font-family: sans-serif;
+            font-size: Medium;
+        }
+
+        .h2{
+            text-align: center; 
+            font-family: sans-serif;
+            line-height: 50px;
+            font-size: 28px;
+            font-weight:800;
+        }
+
+        .about_content{
+            display: flex;
+            margin-top: 30px;
+            margin-left: 100px;
+        }
+
+        .about1{
+            display:inline-block;
+            color: salmon; 
+            background-color:rgb(250, 234, 230);
+            padding: 8px 20px;
+            margin: 20px 0px 4px;
+            font-family: sans-serif;
+            font-size: 15px;
+        }
+
+        .about_text{
+            text-align: left;
+             margin-left: 15px;
+             margin-right: 150px;
+             padding:5px;
+        }
+
+        .p_line{
+            display: flex;
+            border-left: 1px solid darksalmon;
+            color: dimgray; 
+            font-size:16px;
+            padding-left: 15px;
+            padding-top: 5px;
+        }
+
+        .text_box{
+            background-color:rgb(241, 213, 203);
+            padding: 16px 10px 16px 10px;
+            width: 200px;
+            text-align: center;
+            line-height: 40x;
+        }
+
+        .box_wrapper{
+            display: flex;
+            gap: 25px;
+            position: relative;
+        }
+
+      
+
+        .make_appointment{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: 
+                linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                url('img/bg_2.jpg');
+            background-size:cover;
+            background-repeat: no-repeat;
+            width:100%;
+            height:700px;
+            margin-top: 200px;
+        }
+
+        .form{
+            background-color: rgba(0, 0, 0, 0.4);
+            width:50%;
+            height:500px;
+            padding: 30px;
+            align-items: center;
+            display:flex;
+            gap:15px;
+
+        }
+
+        input[type=text],
+        input[type=date],
+        select{
+            width:100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            margin-bottom: 25px;
+            display: inline-block;
+            border: 1px solid darkgray;
+            color: darkgray;
+            background: none;
+            box-sizing:border-box;
+        }
+
+        .submit_appoint{
+            display: inline-block;
+            color: white; 
+            background-color:rgb(244, 157, 147);
+            margin-top: 20px;
+            padding: 14px 180px;  
+            font-family: sans-serif;
+            font-size: 17px;
+            text-align: center;
+            white-space: nowrap;
+        }
+
+        .submit_appoint:hover{
+            background-color: salmon;
+        }
+
+
+        .footer{
+            background-color: #211E1C;
+            background-size:cover;
+            background-repeat: no-repeat;
+            width:50%;
+            height:500px;
+            margin-top: 130px;
+            padding: 50px;
+            color: rgb(192, 189, 189);
+        }
+
+        .box_wrapper_2{
+            display: flex;
+            gap: 2px;
+            position: relative;
+        }
+
+        .social_icon{
+            display: flex;
+            gap: 15px;
+            position: absolute;
+        }
+
+        .social_icon i{
+            color: white;
+            background-color:darksalmon;
+            width: 50px;
+            height:50px;
+            display: flex;
+            font-size: 25px;
+            border-radius:0px;
+            transition: background-color 0.3s ease;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .social_icon i:hover{
+            color: white;
+            background-color: salmon;
+        }
+
+        .rights{
+            background-color: #211E1C;
+            background-size:cover;
+            background-repeat: no-repeat;
+            width:100%;
+            height: 70px;
+            margin-top:1px;
+            padding: 25px;
+            color: rgb(192, 189, 189);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .rights_1{
+            margin-left:45px;
+        }
+
+        .rights_2{
+            margin-right: 45px;
+            text-align: right;
+        }
+
+
+      
+
+

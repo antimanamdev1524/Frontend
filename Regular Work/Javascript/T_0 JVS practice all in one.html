@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,6 +6,32 @@
     <title> JavaScript Theory </title>
 </head>
 <body>
+    <h1 id="test"></h1>
+    
+   <script>
+        // var today = new Date();
+        // document.write(today + "<br>");
+        // document.write(today.getDate() + "<br>");
+
+        // var date = (today.getDate()) + "/" + (today.getMonth() + 1) + "/" + (today.getFullYear());
+        // document.write(date + "<br>");
+
+        // var time = (today.getHours()) + ":" + (today.getMinutes()) + ":" + (today.getsSeconds());
+        // document.write(time + "<br>");  
+
+
+        setInterval(watch, 1000);
+
+        function watch()
+        {
+            var today = new Date();
+            var time = (today.getHours()) + ":" + (today.getMinutes()) + ":" + (today.getSeconds());
+            document.getElementById('test').innerHTML = time;
+        }
+
+   
+        
+   </script>
     
 </body>
 </html>

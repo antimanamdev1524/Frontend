@@ -101,18 +101,44 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.4176600677747!2d72.67062987282985!3d23.045144615490237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e875ee920e675%3A0x336ec467775198c5!2sRajvi%20Cosmetic%20Skin%20and%20Hair%20Clinic!5e0!3m2!1sen!2sin!4v1750263801291!5m2!1sen!2sin" width="450" height="650" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     
          <div class="form">
-                    <form action="#" method="POST">
+                <form action="#" method="POST" onsubmit="return form_validation(this)">
                     <div class="contact_form"><span>CONTACT</span></div>
                     <p class="contact"><b>Contact For Any Query</b></p>
                     <br><br>
                     
-                    <input type="name" placeholder="Your Name" name="name">
-                    <input type="email" placeholder="Your Email" name="email">
-                    <input type="tel" placeholder="Mobile" name="mobile">
+                    <input type="name" placeholder="Your Name" name="name" id="name">
+                    <input type="email" placeholder="Your Email" name="email" id="email">
+                    <input type="tel" placeholder="Mobile" name="mobile" id="mobile">
                     <textarea name="message" placeholder="Message"></textarea>
-                    <div class="send_msg"><span>Send Message</span></div>
+                    <button class="send_msg"><span>Send Message</span></button>
                </form>
-               </div>
+               
+               <script>
+                    function form_validation()
+                        {
+                            var name= document.getElementById('name').value;
+                            if (name == "")
+                             {
+                                alert("Name is required");
+                                return false;
+                             }
+
+                            var email= document.getElementById('email').value;
+                            if(email == "")
+                             {
+                                alert("Email required");
+                                return false;
+                             }
+
+                            var mobile= document.getElementById('mobile').value;
+                            if(mobile== "")
+                             {
+                                alert("Mobile Number required");
+                                return false;
+                             } 
+                        }
+               </script>
+            </div>
     </div>
      
 
