@@ -1,0 +1,40 @@
+<!-- function declaration syntax -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function</title>
+ </head>
+ <body>
+    <script>
+        function function_name(para_A, para_B)
+        {
+            //set of statements
+        }
+
+
+        //function declaration
+          function sum(A, B)
+        {
+            return A+B;
+        }
+
+        let result = sum(5, 6);
+        document.write("sum is:", + result);
+    
+
+    </script>
+    
+    <script>
+        //function expression
+        let sum = function (A, B)
+        {
+            return A+B;
+        }
+        let res = sum(5, 6);
+        document.write("<br>" + "sum is:", res);
+      </script>
+    
+ </body>
+ </html>

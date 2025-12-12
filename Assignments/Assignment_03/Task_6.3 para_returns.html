@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>para_returns</title>
+</head>
+<body>
+    <script>
+        function greet(name)   //'name' is a parameter
+        {
+            document.write("hello_" + name + "<br>");
+        }
+        greet ("Riya");  //here 'Riya' is an argument (actual value)
+    </script>
+
+    <script>
+        function multi(x, y)
+        {
+            return x*y;
+        }
+        let result = multi(5, 7);
+        document.write("multiply of x*y is: " + result);
+    </script>
+    
+</body>
+</html>

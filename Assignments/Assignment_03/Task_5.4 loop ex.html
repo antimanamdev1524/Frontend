@@ -1,0 +1,37 @@
+<!-- loop example -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loop example</title>
+ </head>
+ <body>
+    <script>
+        //for loop
+        var sum = 0;
+        for(let i=1; i<=5; i++)
+        {
+         sum = sum + i;
+        }
+        document.write("sum= ", sum);
+
+
+        //while loop
+        let i=1;   //initialization
+        while(i<=3)   //condition
+        {
+         document.write("<br>", "while loop");
+         i++; //updation
+        }
+
+        //do-while loop
+        var x=1;
+        do
+        {
+            document.write("</br>", x);
+            x++;
+        }while(x>=10);
+    </script>
+ </body>
+ </html>

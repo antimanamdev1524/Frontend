@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>internal script</title>
+    <title>sum_function</title>
 </head>
 <body>
-
-    <h2> Hello world </h2>
-
     <script>
-        document.write("This is an internal JS")
+        let sum = function (A, B)
+        {
+            return A+B;
+        }
+        let res = sum(10, 10);
+        document.write("<br>" + "sum is:", res);
     </script>
-    
+
 </body>
 </html>

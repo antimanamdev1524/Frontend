@@ -1,0 +1,28 @@
+<!-- 
+•	Add a fruit to the end of the array. 
+•	Remove the first fruit from the array. 
+•	Log the modified array to the console. 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var fruits = ["apple", "banana", "cherry"]
+        document.write(fruits + "<br>");
+
+        //add fruit at the end of the array
+        var fruits_1 = fruits.push("mango");
+        document.write(fruits, "..(add elements at the end)" + "<br>");
+
+        //remove the first fruit from the array
+        var fruits_2 = fruits.shift();
+        document.write(fruits, "..(removed first element from fruit)" + "<br>");      
+    </script>
+</body>
+</html>
