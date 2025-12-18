@@ -1,0 +1,129 @@
+       .row{
+        box-sizing: border-box;
+       }
+
+        .icon{
+            color: white;            
+        }
+
+        .appointment{
+            margin-right:-50px;
+            background-color:lightseagreen; 
+            border:none; 
+            margin:auto; 
+            display:block
+        }
+
+        .appointment:hover{
+            background-color: rgb(42, 206, 198);
+        }
+
+        .box{
+            background-color: white;
+            border-left-style: groove;
+            border-radius: 10px;
+            border-color: lightseagreen;
+            border-width: 10px lightseagreen;
+            width: 350px;
+            height: 220px;
+        }
+
+        .icon_color{
+            color: lightseagreen;
+        }
+
+        .line{
+           border-bottom: 2px solid;
+           width: 150px;
+           margin: 20PX auto;    
+           color: dimgray;       
+        }
+
+        .line_1{
+           border-bottom: 4px solid;
+           width: 60px;
+           margin: 0 auto; 
+           margin-bottom: -3px;   
+           color: darkcyan; 
+        }
+
+        .learn:hover{
+            color: lightseagreen;
+        }
+
+        .card_icon{
+            background-color:rgb(186, 241, 238);
+            border-radius: 50px;
+            height: 70px;
+            width: 70px;
+            color: lightseagreen;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card_1{
+            position: relative;
+            overflow: hidden;
+            border: none;
+        }
+
+        .card_icon_1{
+            background-color: rgb(16, 153, 146);
+            border-radius: 50px;
+            height: 60px;
+            width: 60px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            position: absolute;
+            top: 10px;
+            right: 10px;
+
+
+        }
+
+        .card:hover{
+            background-color:rgb(245, 245, 245);
+            border-top: 3px solid lightseagreen;
+            border-style:outset;
+        }
+
+
+        .card_1:hover{
+            background-color:rgb(245, 245, 245);
+            border-style:none;
+
+        }
+
+
+        .button{
+            background-color:lightseagreen; 
+            color: white; 
+            font-size: large;
+        }
+
+
+        .button:hover{
+            background-color: white;
+            border: 1px solid lightseagreen;
+            color: lightseagreen;
+        }
+
+        .find:hover{
+            background-color: white;
+            border: 1px solid lightseagreen;
+        }
+
+        .no_outline{
+            outline: none;
+            box-shadow: none;
+        }
+
+        .no_outline:hover{
+            outline: none;
+            box-shadow: none;
+        }
+
